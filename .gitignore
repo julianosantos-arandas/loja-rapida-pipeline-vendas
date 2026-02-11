@@ -1,0 +1,31 @@
+# Ambiente virtual
+.venv/
+venv/
+
+# Variáveis de ambiente
+.env
+.env.*
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Dados gerados pelo pipeline (não versionar)
+data/processed/*
+!data/processed/README.md
+
+# Banco de dados local
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+
+# Arquivos de BI gerados automaticamente
+data/bi/

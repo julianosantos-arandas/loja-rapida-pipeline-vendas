@@ -1,0 +1,124 @@
+-- =========================================
+-- View: vw_04_vendas_financeiras
+-- Descrição:
+-- Consolida os dados financeiros mensais da loja,
+-- considerando pedidos pagos e devolvidos.
+--
+-- OBS:
+-- O resultado líquido NÃO é calculado nesta view.
+-- Essa métrica é calculada no Power BI via DAX,
+-- para manter flexibilidade analítica.
+--
+-- Fórmula correta do resultado líquido (documentação):
+--
+-- resultado_liquido =
+--   SUM(valor_pago) - SUM(valor_devolvido)
+--
+-- Exemplo SQL (NÃO EXECUTADO):
+--
+-- ROUND(
+--     SUM(CASE 
+--         WHEN order_status = 'paid' 
+--         THEN quantity * unit_price * (1 - COALESCE(discount_pct,0))
+--         ELSE 0 
+--     END)
+--     -
+--     SUM(CASE
+--         WHEN order_status = 'returned'
+--         THEN quantity * unit_price * (1 - COALESCE(discount_pct, 0))
+--         ELSE 0
+--     END)
+-- , 2) AS resultado_liquido
+-- =========================================
+
+
+DROP VIEW IF EXISTS vw_analytics_vendas_financeiras;
+
+CREATE VIEW vw_analytics_vendas_financeiras AS
+SELECT 
+    strftime('%Y-%m', order_date) AS ano_mes,
+
+    COUNT(*) AS total_pedidos_financeiros,
+
+    SUM(CASE
+            WHEN order_status = 'paid' THEN 1
+            ELSE 0
+        END
+    ) AS total_pagos,
+
+    SUM(CASE
+            WHEN order_status = 'returned' THEN 1
+            ELSE 0
+        END 
+    ) AS total_devoluções,
+
+    ROUND(
+    SUM(
+        CASE
+            WHEN order_status = 'paid'
+            THEN quantity * unit_price * (1 - COALESCE(discount_pct, 0))
+            ELSE 0
+        END
+    )
+, 2) AS valores_pagos,
+
+
+
+    ROUND(
+    SUM(
+        CASE
+            WHEN order_status = 'returned'
+            THEN quantity * unit_price * (1 - COALESCE(discount_pct, 0))
+            ELSE 0
+        END
+    )
+, 2) AS valores_devolvidos,
+
+ROUND(
+    SUM(
+        CASE
+            WHEN order_status = 'paid'
+            THEN ABS(quantity * unit_price * (1 - COALESCE(discount_pct, 0)))
+            ELSE 0
+        END
+    ), 2
+) AS valores_pagos_corrigidos,
+
+ROUND(
+    SUM(
+        CASE
+            WHEN order_status = 'returned'
+            THEN ABS(quantity * unit_price * (1 - COALESCE(discount_pct, 0)))
+            ELSE 0
+        END
+    ), 2
+) AS valores_devolvidos_corrigidos,
+
+ROUND(
+    SUM(
+        CASE
+            WHEN order_status = 'paid'
+            THEN ABS(quantity * unit_price * (1 - COALESCE(discount_pct, 0)))
+            ELSE 0
+        END
+    )
+    -
+    SUM(
+        CASE
+            WHEN order_status = 'returned'
+            THEN ABS(quantity * unit_price * (1 - COALESCE(discount_pct, 0)))
+            ELSE 0
+        END
+    )
+, 2) AS resultado_liquido_financeiro,
+
+
+
+
+
+    ROUND(SUM(quantity * unit_price * (1 - COALESCE(discount_pct, 0))),2) AS valor_total_financeiro
+
+FROM vw_base_vendas
+WHERE order_status IN ('paid', 'returned')
+GROUP BY ano_mes
+ORDER BY ano_mes;

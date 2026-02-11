@@ -1,0 +1,509 @@
+order_id,order_date,order_time,customer_id,customer_city,product_id,product_name,category,quantity,unit_price,discount_pct,payment_method,channel,order_status
+3001,2024-10-01,08:05,C021,São Paulo,P100,Headphone Bluetooth,Eletrônicos,1,1416.42,0.05,credit_card,website,paid
+3002,01/10/2024,08:45,C022,Rio de Janeiro,P200,Sneaker Running Fit,Calçados,2,123.74,0.1,pix,mobile_app,paid
+3003,2024-10-01,09:15,C023,Belo Horizonte,P300,Smartwatch Pro,Eletrônicos,0,774.75,0.15,credit_card,website,paid
+3004,2024-10-01,09:55,C024,Curitiba,P400,Mochila Urban,Accessories,1,381.25,0.0,debit_card,website,paid
+3005,2024-10-02,10:20,C025,Porto Alegre,P500,Camiseta Basic,Moda,3,111.93,1.2,pix,website,paid
+3006,2024-10-02,25:00,C026,Salvador,P600,Notebook Slim 14,Eletrônicos,1,607.98,0.08,credit_card,website,paid
+3007,2024-10-03,10:40,C027,São Paulo ,P700,Mouse Wireless,Eletronicos,2,281.35,-0.05,credit_card,mobile_app,paid
+3008,2024-10-03,11:05,,Recife,P800,Jaqueta Waterproof,Moda,1,74.21,0.2,credit_card,website,paid
+3009,2024-10-14,09:04,C127,Rio de Janeiro,P1376,Sandália Casual,Calçados,4,126.23,0.2,pix,website,canceled
+3010,2024-10-22,07:56,C148,Rio de Janeiro,P315,Notebook Slim 14,Eletrônicos,0,637.4,0.2,debit_card,web,returned
+3011,2024-10-22,11:35,C033,Belo Horizonte,P566,Produto Desconhecido,Outros,1,47.26,0.0,pix,marketplace,pending
+3012,2024-10-23,05:29,C102,Recife,P1290,Carteira Couro,Accessories,3,363.68,0.15,cash,website,returned
+3013,2024-10-20,17:23,C146,Fortaleza,P578,Camisa Time,Esporte,0,149.82,0.0,boleto,mobile_app,pending
+3014,2024-10-04,01:51,C022,São Paulo,P728,Mochila Urban,Accessories,2,212.29,0.1,boleto,marketplace,returned
+3015,2024-10-12,07:15,C198,Fortaleza,P943,Sandália Casual,Calçados,4,187.86,0.15,boleto,website,returned
+3016,2024-10-17,01:26,C081,Belo Horizonte,P637,Bola de Futebol,Esporte,2,289.15,0.05,cash,website,paid
+3017,2024-10-19,09:31,C187,Brasília,P1581,Fone In-Ear,Eletrônicos,3,622.11,0.1,debit_card,mobile_app,canceled
+3018,2024-10-04,23:03,C098,Rio de Janeiro,P1395,Item Promocional,Outros,0,186.9,0.2,pix,mobile_app,
+3019,2024-10-04,01:01,C162,Brasília,P394,Mochila Urban,Accessories,2,319.64,0.15,cash,mobile_app,pending
+3020,2024-10-06,04:42,C100,Porto Alegre,P287,Fone In-Ear,Eletrônicos,5,438.29,0.1,boleto,mobile_app,pending
+3021,2024-10-30,08:40,C097,Campinas,P420,Bota Hiking,Calçados,3,153.8,0.15,boleto,website,canceled
+3022,2024-10-30,19:36,C086,Fortaleza,P623,Sneaker Pro,Calçados,3,478.11,0.0,boleto,website,paid
+3023,2024-10-31,20:26,C058,Belo Horizonte,P1203,Mochila Urban,Accessories,0,76.43,0.05,cash,website,paid
+3024,2024-10-15,15:17,C036,Porto Alegre,P284,Mochila Urban,Accessories,2,201.2,0.2,boleto,marketplace,returned
+3025,2024-10-18,00:04,C065,Curitiba,P420,Bola de Futebol,Esporte,3,326.57,0.2,boleto,desktop,canceled
+3026,2024-10-09,17:41,C131,Porto Alegre,P351,Sandália Casual,Calçados,0,319.69,0.1,cash,mobile_app,pending
+3027,2024-10-26,23:08,C030,Porto Alegre,P1131,Jogo de Panelas,Casa,4,407.28,0.05,debit_card,desktop,canceled
+3028,2024-10-31,06:45,C069,Fortaleza,P367,Camisa Time,Esporte,2,207.2,0.05,boleto,mobile_app,returned
+3029,2024-10-29,19:18,C025,Belo Horizonte,P434,Caixa de Som,Eletrônicos,4,2904.98,0.15,boleto,web,canceled
+3030,2024-10-17,16:01,C069,Rio de Janeiro,P950,Brinde Especial,Outros,2,273.22,0.15,cash,mobile_app,returned
+3031,2024-10-25,07:11,C131,Brasília,P1092,Camiseta Basic,Moda,4,245.57,0.2,boleto,desktop,returned
+3032,2024-10-17,13:52,C139,Recife,P1535,Garrafa Térmica,Esporte,2,274.91,-0.5,debit_card,mobile_app,returned
+3033,2024-10-05,11:30,C130,Recife,P1256,Carteira Couro,Accessories,2,143.39,0.2,cash,website,canceled
+3034,2024-10-28,18:49,C106,Porto Alegre,P1184,Smartphone X,Eletrônicos,3,2834.67,0.0,boleto,desktop,
+3035,2024-10-08,21:51,C143,Brasília,P801,Monitor 24,Eletrônicos,5,524.09,0.15,boleto,desktop,paid
+3036,2024-10-25,11:33,C117,Curitiba,P463,Bola de Futebol,Esporte,5,175.55,1.2,pix,mobile_app,paid
+3037,2024-10-15,04:05,C164,Curitiba,P860,Camiseta Basic,Moda,3,139.65,0.15,cash,marketplace,paid
+3038,2024-10-18,16:05,C128,São Paulo,P202,Fone In-Ear,Eletrônicos,4,2187.94,0.1,pix,website,returned
+3039,2024-10-28,05:22,C168,Salvador,P993,Sandália Casual,Calçados,0,206.49,0.05,pix,marketplace,returned
+3040,2024-10-14,03:44,C084,Porto Alegre,P669,Smartphone X,Eletrônicos,3,2000.51,2.0,boleto,website,paid
+3041,2024-10-26,18:34,C048,Campinas,P315,Jogo de Panelas,Casa,1,255.61,0.15,credit_card,desktop,canceled
+3042,2024-10-08,23:30,C102,Rio de Janeiro,P193,Relógio Clássico,Accessories,3,127.89,0.1,pix,website,canceled
+3043,2024-10-11,04:33,,Porto Alegre,P968,Calça Skinny,Moda,4,98.94,0.05,credit_card,mobile_app,canceled
+3044,2024-10-02,16:01,C140,Brasília,P1252,Calça Skinny,Moda,5,283.93,0.05,boleto,desktop,canceled
+3045,2024-10-02,05:26,C108,Porto Alegre,P1538,Jogo de Panelas,Casa,5,325.2,0.0,boleto,mobile_app,canceled
+3046,2024-10-20,10:09,,São Paulo,P281,Liquidificador 900W,Casa,5,183.3,0.1,pix,marketplace,canceled
+3047,2024-10-08,03:09,C200,São Paulo,P915,Jaqueta Jeans,Moda,2,50.28,0.0,boleto,web,paid
+3048,2024-10-14,17:04,C193,Campinas,P1529,Item Promocional,Outros,5,69.46,0.05,cash,mobile_app,pending
+3049,2024-10-14,04:46,C188,Curitiba,P1296,Mochila Urban,Accessories,5,287.84,0.15,cash,web,returned
+3050,2024-10-04,00:17,C159,Rio de Janeiro,P1148,Produto Desconhecido,Outros,1,141.26,0.15,pix,desktop,pending
+3051,2024-10-15,19:46,C038,Curitiba,P1365,Bola de Futebol,Esporte,5,74.41,0.1,boleto,mobile_app,pending
+3052,2024-10-15,17:29,C129,Curitiba,P1017,Jaqueta Jeans,Moda,4,97.17,0.2,boleto,marketplace,canceled
+3053,2024-10-07,19:20,C058,Brasília,P1454,Carteira Couro,Accessories,3,269.42,0.05,cash,website,returned
+3054,2024-10-17,04:21,C073,Salvador,P1127,Sneaker Running Fit,Calçados,2,361.33,0.1,debit_card,desktop,returned
+3055,2024-10-23,16:04,C165,Brasília,P203,Produto Desconhecido,Outros,4,95.45,0.05,credit_card,website,paid
+3056,2024-10-31,11:56,C155,Curitiba,P485,Sandália Casual,Calçados,5,484.05,0.2,pix,desktop,paid
+3057,2024-10-12,14:21,C190,São Paulo,P917,Sandália Casual,Calçados,1,224.49,0.2,debit_card,website,canceled
+3058,2024-10-20,07:51,C180,Porto Alegre,P269,Jaqueta Waterproof,Moda,5,160.95,0.05,boleto,mobile_app,pending
+3059,2024-10-19,07:53,C134,São Paulo,P612,Item Promocional,Outros,3,183.37,0.0,pix,web,canceled
+3060,2024-10-15,00:04,C098,Porto Alegre,P1267,Produto Desconhecido,Outros,2,212.69,0.1,pix,marketplace,returned
+3061,2024-10-11,10:33,C131,Salvador,P1241,Bola de Futebol,Esporte,3,344.7,0.15,pix,marketplace,returned
+3062,2024-10-25,03:36,C173,São Paulo,P358,Fone In-Ear,Eletrônicos,5,1126.66,0.1,debit_card,mobile_app,returned
+3063,2024-10-16,14:29,C085,Brasília,P545,Produto Desconhecido,Outros,5,115.21,0.2,boleto,website,returned
+3064,2024-10-12,08:07,,Belo Horizonte,P884,Camiseta Basic,Moda,1,61.2,0.0,debit_card,marketplace,paid
+3065,2024-10-16,14:19,C200,Curitiba,P1047,Sneaker Running Fit,Calçados,1,203.31,0.1,boleto,marketplace,pending
+3066,2024-10-01,02:36,C021,Curitiba,P856,Bola de Futebol,Esporte,3,131.73,0.05,boleto,desktop,paid
+3067,2024-10-25,03:47,C081,Curitiba,P222,Jogo de Panelas,Casa,2,443.57,0.0,credit_card,marketplace,returned
+3068,2024-10-26,00:07,C183,Fortaleza,P1346,Brinde Especial,Outros,0,76.38,0.2,cash,desktop,canceled
+3069,2024-10-21,10:46,C143,Brasília,P428,Produto Desconhecido,Outros,5,68.54,0.0,debit_card,website,paid
+3070,2024-10-22,25:28,,Campinas,P1143,Mouse Wireless,Eletrônicos,4,1971.73,0.1,pix,website,pending
+3071,2024-10-16,10:22,C144,Salvador,P172,Brinde Especial,Outros,5,205.95,0.05,debit_card,desktop,paid
+3072,2024-10-11,17:58,C116,Salvador,P733,Jaqueta Jeans,Moda,2,90.71,0.15,boleto,desktop,paid
+3073,2024-10-16,24:47,C183,Recife,P660,Caixa de Som,Eletrônicos,3,1178.15,0.15,cash,website,returned
+3074,2024-10-19,05:55,C160,Salvador,P164,Aspirador Portátil,Casa,-1,133.5,0.15,boleto,web,returned
+3075,2024-10-30,06:12,C054,Salvador,P519,Produto Desconhecido,Outros,2,217.0,0.1,credit_card,desktop,returned
+3076,2024-10-03,15:19,C096,Porto Alegre,P1104,Camiseta Basic,Moda,1,274.89,0.0,cash,marketplace,returned
+3077,2024-10-18,14:26,C153,Rio de Janeiro,P1262,Bota Hiking,Calçados,2,198.49,0.15,debit_card,website,
+3078,2024-10-03,20:40,C065,Salvador,P1551,Camiseta Basic,Moda,2,234.01,0.1,credit_card,mobile_app,paid
+3079,2024-10-18,18:51,C177,Belo Horizonte,P492,Smartphone X,Eletrônicos,3,329.35,0.0,debit_card,mobile_app,pending
+3080,2024-10-25,06:32,C026,São Paulo,P793,Calça Skinny,Moda,2,195.32,0.15,boleto,website,canceled
+3081,2024-10-04,13:06,C109,São Paulo,P1426,Sneaker Running Fit,Calçados,2,451.17,0.2,pix,mobile_app,returned
+3082,2024-10-29,09:10,C042,Fortaleza,P344,Aspirador Portátil,Casa,0,126.52,0.15,credit_card,web,pending
+3083,2024-10-20,13:56,C091,Brasília,P1329,Produto Desconhecido,Outros,1,78.36,0.15,boleto,web,pending
+3084,2024-10-19,13:13,C137,Belo Horizonte,P581,Jogo de Panelas,Casa,5,317.95,0.15,credit_card,desktop,returned
+3085,2024-10-21,19:52,C074,Fortaleza,P666,Garrafa Térmica,Esporte,5,347.88,0.0,boleto,website,pending
+3086,2024-10-04,02:38,C105,Rio de Janeiro,P720,Item Promocional,Outros,3,93.92,0.05,debit_card,marketplace,canceled
+3087,2024-10-27,07:51,C182,Rio de Janeiro,P1469,Sneaker Running Fit,Calçados,2,222.55,0.15,pix,desktop,pending
+3088,2024-10-31,16:26,C164,Belo Horizonte,P1210,Camisa Time,Esporte,1,235.23,0.2,debit_card,marketplace,pending
+3089,2024-10-11,13:02,C113,Belo Horizonte,P982,Sneaker Running Fit,Calçados,5,264.14,2.0,credit_card,website,returned
+3090,2024-10-28,03:45,C089,Porto Alegre,P1037,Brinde Especial,Outros,5,235.8,0.1,cash,mobile_app,
+3091,2024-10-09,23:09,C062,São Paulo,P1393,Item Promocional,Outros,1,268.65,0.15,credit_card,marketplace,pending
+3092,2024-10-05,21:01,C134,Fortaleza,P584,Mochila Urban,Accessories,1,94.84,0.05,pix,desktop,paid
+3093,2024-10-29,14:54,C145,Belo Horizonte,P1107,Camiseta Basic,Moda,1,215.5,0.1,debit_card,web,paid
+3094,2024-10-23,11:48,C072,Salvador,P772,Sandália Casual,Calçados,0,444.12,0.0,pix,mobile_app,pending
+3095,2024-10-26,03:54,C112,Curitiba,P103,Liquidificador 900W,Casa,0,214.02,0.05,credit_card,mobile_app,paid
+3096,2024-10-28,06:03,C078,Fortaleza,P1328,Sneaker Pro,Calçados,5,231.51,0.2,credit_card,desktop,canceled
+3097,2024-10-21,18:23,C161,Brasília,P644,Sandália Casual,Calçados,4,323.15,0.0,cash,mobile_app,returned
+3098,2024-10-02,09:59,C160,Recife,P194,Liquidificador 900W,Casa,4,272.32,0.15,pix,marketplace,returned
+3099,2024-10-26,12:47,C134,Rio de Janeiro,P1456,Fone In-Ear,Eletrônicos,4,250.11,0.0,boleto,mobile_app,paid
+3100,2024-10-17,25:54,C087,Rio de Janeiro,P454,Sneaker Pro,Calçados,2,353.26,0.05,boleto,desktop,returned
+3101,2024-10-23,20:22,C156,São Paulo,P347,Mochila Urban,Accessories,2,163.62,0.0,cash,website,paid
+3102,2024-10-01,04:37,C085,Porto Alegre,P1017,Bola de Futebol,Esporte,5,297.81,0.15,credit_card,mobile_app,paid
+3103,2024-10-22,21:22,C070,Salvador,P1019,Fone In-Ear,Eletrônicos,5,1924.49,0.0,cash,website,canceled
+3104,2024-10-11,22:57,C116,Belo Horizonte,P960,Sneaker Pro,Calçados,1,486.26,0.05,boleto,mobile_app,pending
+3105,2024-10-02,15:01,C136,São Paulo,P1504,Brinde Especial,Outros,1,240.4,0.2,boleto,web,paid
+3106,2024-10-26,11:52,C198,Brasília,P237,Headphone Bass,Eletrônicos,0,2271.13,0.05,boleto,web,canceled
+3107,2024-10-09,20:08,C024,São Paulo,P946,Mochila Urban,Accessories,4,228.93,0.2,debit_card,desktop,returned
+3108,2024-10-20,21:26,C124,Salvador,P1542,Bola de Futebol,Esporte,4,327.88,2.0,boleto,website,pending
+3109,2024-10-18,23:58,C174,São Paulo,P260,Camisa Time,Esporte,0,61.66,0.2,credit_card,desktop,paid
+3110,2024-10-23,05:23,C077,Recife,P720,Mochila Urban,Accessories,1,105.48,0.2,boleto,website,paid
+3111,2024-10-30,22:23,,Porto Alegre,P1124,Jaqueta Waterproof,Moda,1,230.0,0.15,boleto,marketplace,returned
+3112,2024-10-28,20:33,C065,Recife,P1251,Bota Hiking,Calçados,3,293.1,0.0,credit_card,mobile_app,returned
+3113,2024-10-20,12:17,C022,São Paulo,P657,Camiseta Basic,Moda,-1,64.1,0.2,pix,desktop,paid
+3114,2024-10-03,20:50,C151,Belo Horizonte,P1176,Garrafa Térmica,Esporte,2,108.78,0.05,debit_card,marketplace,canceled
+3115,2024-10-10,11:21,C027,São Paulo,P900,Bota Hiking,Calçados,0,466.85,0.0,cash,web,paid
+3116,2024-10-21,07:22,C189,Campinas,P110,Sandália Casual,Calçados,5,216.16,0.05,cash,web,pending
+3117,2024-10-05,01:36,C185,Belo Horizonte,P1179,Liquidificador 900W,Casa,4,374.82,2.0,debit_card,desktop,returned
+3118,2024-10-28,14:49,C167,Recife,P815,Item Promocional,Outros,0,45.37,0.05,debit_card,mobile_app,canceled
+3119,2024-10-15,24:16,C183,Recife,P417,Bola de Futebol,Esporte,2,154.53,0.0,boleto,desktop,paid
+3120,2024-10-25,16:05,C030,Recife,P180,Garrafa Térmica,Esporte,1,78.54,0.1,boleto,marketplace,canceled
+3121,2024-10-20,09:39,C108,Salvador,P123,Bota Hiking,Calçados,0,260.16,0.0,credit_card,marketplace,returned
+3122,2024-10-25,19:57,C180,Recife,P1069,Jaqueta Jeans,Moda,1,44.06,0.2,credit_card,marketplace,returned
+3123,2024-10-15,14:36,C166,Fortaleza,P708,Relógio Clássico,Accessories,4,59.0,0.1,credit_card,website,pending
+3124,2024-10-16,09:15,C100,Curitiba,P1549,Liquidificador 900W,Casa,4,413.37,0.05,credit_card,marketplace,canceled
+3125,2024-10-13,09:13,,Fortaleza,P1469,Bota Hiking,Calçados,0,312.75,0.1,boleto,website,pending
+3126,2024-10-12,23:37,C053,São Paulo,P1251,Carteira Couro,Accessories,0,84.69,0.0,debit_card,website,paid
+3127,2024-10-08,17:08,C042,Recife,P964,Mochila Urban,Accessories,4,192.23,0.0,boleto,desktop,paid
+3128,2024-10-17,22:20,C021,Salvador,P743,Sneaker Pro,Calçados,2,190.31,0.15,pix,website,pending
+3129,2024-10-08,12:35,C026,Recife,P635,Sneaker Running Fit,Calçados,2,449.59,0.0,debit_card,website,paid
+3130,2024-10-28,04:06,C179,Rio de Janeiro,P319,Produto Desconhecido,Outros,1,145.53,0.0,cash,desktop,pending
+3131,2024-10-31,04:44,C118,Curitiba,P515,Jaqueta Jeans,Moda,3,160.44,0.05,pix,mobile_app,pending
+3132,2024-10-03,20:52,C025,Brasília,P1538,Produto Desconhecido,Outros,0,244.26,0.1,boleto,marketplace,
+3133,2024-10-07,06:42,C099,Brasília,P1310,Aspirador Portátil,Casa,1,339.7,0.0,credit_card,desktop,canceled
+3134,2024-10-03,13:34,C120,Recife,P1115,Jaqueta Waterproof,Moda,5,182.24,0.0,cash,marketplace,returned
+3135,2024-10-11,08:16,C035,Fortaleza,P334,Aspirador Portátil,Casa,0,128.27,0.15,credit_card,desktop,pending
+3136,2024-10-01,07:52,C051,Campinas,P759,Sneaker Pro,Calçados,-1,426.28,0.0,boleto,web,
+3137,2024-10-13,06:24,C143,Recife,P1169,Monitor 24,Eletrônicos,5,1915.36,0.0,boleto,web,paid
+3138,2024-10-14,23:05,C165,Curitiba,P883,Teclado Mecânico,Eletrônicos,3,632.39,0.05,boleto,marketplace,returned
+3139,2024-10-02,11:14,C111,Recife,P1309,Caixa de Som,Eletrônicos,2,1130.36,0.0,cash,desktop,canceled
+3140,2024-10-21,03:51,C089,São Paulo,P668,Item Promocional,Outros,1,70.77,0.05,debit_card,desktop,canceled
+3141,2024-10-07,20:10,,Campinas,P1576,Bola de Futebol,Esporte,1,288.85,0.1,boleto,website,canceled
+3142,2024-10-28,20:10,C079,Campinas,P158,Garrafa Térmica,Esporte,4,86.68,0.15,pix,mobile_app,canceled
+3143,2024-10-21,02:01,C134,Campinas,P653,Sandália Casual,Calçados,3,284.99,0.05,pix,desktop,paid
+3144,2024-10-20,04:55,C172,Recife,P153,Camiseta Basic,Moda,4,283.18,0.05,boleto,web,pending
+3145,2024-10-28,05:56,C087,Salvador,P1534,Monitor 24,Eletrônicos,0,975.86,0.15,pix,web,paid
+3146,2024-10-02,23:57,C108,Fortaleza,P1583,Bola de Futebol,Esporte,5,324.33,0.2,pix,web,paid
+3147,2024-10-05,16:01,C177,Recife,P594,Produto Desconhecido,Outros,3,137.76,0.0,pix,desktop,pending
+3148,2024-10-30,13:02,,Campinas,P1367,Bola de Futebol,Esporte,5,117.69,0.0,pix,web,pending
+3149,2024-10-14,13:53,C135,Brasília,P787,Teclado Mecânico,Eletrônicos,2,1420.37,0.1,credit_card,web,pending
+3150,2024-10-17,11:45,C181,Brasília,P1286,Smartwatch Pro,Eletrônicos,5,1880.77,0.2,credit_card,mobile_app,paid
+3151,2024-10-09,07:32,C170,Fortaleza,P1367,Carteira Couro,Accessories,0,145.04,0.15,debit_card,web,returned
+3152,2024-10-29,18:16,,Rio de Janeiro,P1042,Jogo de Panelas,Casa,5,155.28,0.05,pix,website,pending
+3153,2024-10-06,21:20,C192,Salvador,P1250,Carteira Couro,Accessories,3,86.74,0.05,boleto,desktop,returned
+3154,2024-10-04,07:38,C099,Curitiba,P676,Brinde Especial,Outros,5,292.85,0.1,debit_card,web,pending
+3155,2024-10-02,18:39,C146,Salvador,P618,Bola de Futebol,Esporte,1,304.9,0.15,boleto,website,returned
+3156,2024-10-31,16:04,C103,São Paulo,P1057,Jaqueta Jeans,Moda,0,149.83,0.2,cash,marketplace,pending
+3157,2024-10-14,03:41,C154,Fortaleza,P1266,Fone In-Ear,Eletrônicos,5,2001.35,-0.5,pix,marketplace,pending
+3158,2024-10-30,07:47,C148,São Paulo,P187,Garrafa Térmica,Esporte,3,124.36,0.1,pix,web,pending
+3159,2024-10-27,25:30,C040,Porto Alegre,P374,Carteira Couro,Accessories,5,76.47,0.2,boleto,web,pending
+3160,2024-10-24,04:41,C189,Fortaleza,P586,Garrafa Térmica,Esporte,2,201.04,0.05,boleto,web,paid
+3161,2024-10-23,21:58,C034,São Paulo,P876,Jogo de Panelas,Casa,5,384.34,0.2,debit_card,website,paid
+3162,2024-10-08,00:56,C059,Curitiba,P903,Jogo de Panelas,Casa,0,137.62,0.0,cash,web,returned
+3163,2024-10-25,10:00,C047,Porto Alegre,P955,Jaqueta Waterproof,Moda,5,125.78,0.0,pix,desktop,pending
+3164,2024-10-13,05:16,C183,Porto Alegre,P234,Calça Skinny,Moda,2,268.35,0.05,pix,marketplace,canceled
+3165,2024-10-31,09:53,C097,Curitiba,P779,Jaqueta Waterproof,Moda,0,88.55,0.1,pix,marketplace,canceled
+3166,2024-10-20,11:36,C096,Fortaleza,P401,Brinde Especial,Outros,0,55.38,0.05,cash,website,paid
+3167,2024-10-22,15:08,C059,São Paulo,P1491,Aspirador Portátil,Casa,4,352.67,0.0,boleto,web,canceled
+3168,2024-10-09,02:40,C146,Porto Alegre,P1103,Brinde Especial,Outros,5,130.46,0.0,pix,desktop,pending
+3169,2024-10-21,09:34,C067,Recife,P918,Mochila Urban,Accessories,5,299.81,0.2,boleto,marketplace,returned
+3170,2024-10-02,00:32,C149,Campinas,P1485,Sneaker Pro,Calçados,4,162.49,0.05,pix,marketplace,canceled
+3171,2024-10-05,17:21,C116,Campinas,P1425,Headphone Bass,Eletrônicos,2,1282.05,0.0,debit_card,marketplace,pending
+3172,2024-10-03,12:22,C103,Curitiba,P241,Produto Desconhecido,Outros,2,196.91,0.05,boleto,desktop,returned
+3173,2024-10-27,06:28,C138,Fortaleza,P1177,Relógio Clássico,Accessories,2,109.53,0.2,debit_card,marketplace,pending
+3174,2024-10-18,14:47,C174,Recife,P581,Sandália Casual,Calçados,5,376.2,0.0,cash,desktop,pending
+3175,2024-10-11,24:15,C117,Porto Alegre,P856,Sneaker Pro,Calçados,3,121.38,0.2,cash,web,returned
+3176,2024-10-07,15:52,C095,Salvador,P1472,Jaqueta Waterproof,Moda,5,267.35,0.0,debit_card,desktop,paid
+3177,2024-10-10,04:14,C085,Rio de Janeiro,P793,Jaqueta Jeans,Moda,5,135.95,0.2,debit_card,desktop,paid
+3178,2024-10-26,05:40,C024,São Paulo,P1200,Sneaker Pro,Calçados,2,228.15,0.0,debit_card,marketplace,pending
+3179,2024-10-17,11:59,C032,Campinas,P806,Item Promocional,Outros,1,125.69,0.1,cash,mobile_app,returned
+3180,2024-10-13,16:10,C143,Rio de Janeiro,P388,Bota Hiking,Calçados,4,386.87,0.05,credit_card,desktop,canceled
+3181,2024-10-26,20:10,C036,Campinas,P1066,Aspirador Portátil,Casa,2,433.86,0.2,credit_card,desktop,returned
+3182,2024-10-08,12:43,C099,Salvador,P659,Calça Skinny,Moda,1,193.13,0.0,debit_card,web,returned
+3183,2024-10-25,09:56,C162,São Paulo,P1233,Jogo de Panelas,Casa,5,394.26,0.2,credit_card,website,returned
+3184,2024-10-07,02:02,C198,Porto Alegre,P1076,Item Promocional,Outros,1,166.85,0.05,debit_card,website,returned
+3185,2024-10-26,00:37,C154,Rio de Janeiro,P362,Produto Desconhecido,Outros,1,120.64,0.2,boleto,desktop,pending
+3186,2024-10-20,05:22,C147,Curitiba,P1147,Produto Desconhecido,Outros,-1,213.49,0.15,credit_card,marketplace,returned
+3187,2024-10-21,12:14,C139,Recife,P162,Notebook Slim 14,Eletrônicos,3,376.65,0.15,credit_card,mobile_app,pending
+3188,2024-10-19,00:29,C066,Porto Alegre,P109,Notebook Slim 14,Eletrônicos,3,225.09,0.2,pix,desktop,pending
+3189,2024-10-10,09:06,C044,Recife,P1087,Bota Hiking,Calçados,5,469.56,0.2,pix,web,returned
+3190,2024-10-05,05:57,C191,Belo Horizonte,P773,Relógio Clássico,Accessories,3,378.03,0.1,boleto,web,pending
+3191,2024-10-21,10:48,C057,Porto Alegre,P1183,Sneaker Running Fit,Calçados,5,268.97,0.0,credit_card,website,paid
+3192,2024-10-06,06:11,C138,Belo Horizonte,P647,Garrafa Térmica,Esporte,5,78.34,0.05,boleto,mobile_app,paid
+3193,2024-10-30,02:40,C040,Curitiba,P281,Camisa Time,Esporte,3,76.81,0.1,credit_card,desktop,paid
+3194,2024-10-03,03:54,C164,Porto Alegre,P1186,Brinde Especial,Outros,-3,58.73,0.15,cash,website,
+3195,2024-10-21,20:49,C132,Salvador,P1455,Jogo de Panelas,Casa,-3,290.1,0.1,boleto,marketplace,canceled
+3196,2024-10-17,12:27,C056,Recife,P231,Relógio Clássico,Accessories,5,123.46,2.0,boleto,marketplace,pending
+3197,2024-10-09,23:58,C022,Campinas,P868,Jogo de Panelas,Casa,4,264.59,0.15,debit_card,web,pending
+3198,2024-10-03,18:22,C097,Brasília,P1555,Camiseta Basic,Moda,1,109.57,0.15,credit_card,mobile_app,pending
+3199,2024-10-06,09:40,C106,Recife,P442,Headphone Bass,Eletrônicos,2,1025.93,0.2,credit_card,web,returned
+3200,2024-10-02,19:39,C092,Belo Horizonte,P929,Brinde Especial,Outros,5,193.75,0.05,credit_card,marketplace,returned
+3201,2024-10-08,19:11,C095,Porto Alegre,P1497,Produto Desconhecido,Outros,3,261.14,0.15,pix,desktop,
+3202,2024-10-12,06:17,C089,Brasília,P1544,Teclado Mecânico,Eletrônicos,3,684.34,2.0,credit_card,desktop,returned
+3203,2024-10-17,23:25,C052,Brasília,P762,Notebook Slim 14,Eletrônicos,1,840.44,0.1,boleto,marketplace,paid
+3204,2024-10-07,12:01,C123,Curitiba,P218,Sneaker Pro,Calçados,1,493.1,0.1,debit_card,website,paid
+3205,2024-10-05,17:23,C055,Curitiba,P316,Jogo de Panelas,Casa,5,347.53,0.1,pix,website,returned
+3206,2024-10-28,16:38,C165,São Paulo,P489,Notebook Slim 14,Eletrônicos,5,136.31,0.15,cash,marketplace,returned
+3207,2024-10-12,15:23,C061,Curitiba,P852,Jogo de Panelas,Casa,3,163.52,0.2,credit_card,mobile_app,canceled
+3208,2024-10-15,25:20,C143,Curitiba,P282,Carteira Couro,Accessories,0,173.1,0.2,cash,website,
+3209,2024-10-16,21:03,C059,São Paulo,P118,Liquidificador 900W,Casa,0,394.31,0.0,cash,marketplace,returned
+3210,2024-10-17,16:09,C071,Curitiba,P1509,Sneaker Pro,Calçados,0,422.96,0.15,boleto,desktop,paid
+3211,2024-10-05,08:18,C131,Recife,P204,Bota Hiking,Calçados,0,408.61,0.0,pix,web,returned
+3212,2024-10-09,13:47,C112,Recife,P784,Bota Hiking,Calçados,0,293.27,0.05,credit_card,marketplace,returned
+3213,2024-10-11,02:54,C127,Rio de Janeiro,P1448,Jaqueta Waterproof,Moda,5,280.81,1.2,cash,mobile_app,canceled
+3214,2024-10-24,07:31,C117,Brasília,P1449,Produto Desconhecido,Outros,0,287.6,0.0,credit_card,mobile_app,pending
+3215,2024-10-01,15:19,C153,Porto Alegre,P1280,Mochila Urban,Accessories,2,113.67,0.05,boleto,web,returned
+3216,2024-10-26,08:40,C197,Fortaleza,P334,Brinde Especial,Outros,5,252.53,0.1,cash,website,pending
+3217,2024-10-18,11:27,C169,São Paulo,P1176,Item Promocional,Outros,0,80.73,0.2,credit_card,website,paid
+3218,2024-10-05,19:18,C097,Belo Horizonte,P618,Mochila Urban,Accessories,2,160.99,0.15,credit_card,desktop,pending
+3219,2024-10-02,03:43,C023,Campinas,P1181,Jaqueta Waterproof,Moda,0,200.95,0.15,credit_card,desktop,paid
+3220,2024-10-19,19:24,C188,Recife,P1270,Notebook Slim 14,Eletrônicos,4,1287.58,0.0,debit_card,mobile_app,returned
+3221,2024-10-20,17:59,C074,Belo Horizonte,P1445,Calça Skinny,Moda,1,235.97,1.2,pix,website,canceled
+3222,2024-10-14,10:18,C155,Brasília,P921,Monitor 24,Eletrônicos,0,2754.55,0.0,cash,marketplace,canceled
+3223,2024-10-24,20:00,C072,Belo Horizonte,P231,Carteira Couro,Accessories,0,201.56,0.0,pix,marketplace,canceled
+3224,2024-10-27,04:34,C149,Porto Alegre,P1200,Jaqueta Jeans,Moda,0,197.23,0.1,credit_card,desktop,paid
+3225,2024-10-22,07:32,C138,Recife,P1082,Aspirador Portátil,Casa,0,350.86,0.2,boleto,marketplace,canceled
+3226,2024-10-17,13:30,C195,Curitiba,P1316,Sneaker Running Fit,Calçados,2,351.76,0.0,credit_card,marketplace,pending
+3227,2024-10-25,13:34,C196,São Paulo,P156,Brinde Especial,Outros,0,34.68,0.05,debit_card,desktop,pending
+3228,2024-10-21,19:42,C071,Porto Alegre,P903,Produto Desconhecido,Outros,2,143.98,0.0,debit_card,desktop,paid
+3229,2024-10-29,25:25,C073,Fortaleza,P1300,Mochila Urban,Accessories,1,335.58,0.2,pix,mobile_app,
+3230,2024-10-26,03:01,C101,Salvador,P502,Camisa Time,Esporte,0,141.84,0.15,boleto,website,canceled
+3231,2024-10-07,12:36,C055,Brasília,P382,Sneaker Pro,Calçados,1,166.02,0.0,cash,website,pending
+3232,2024-10-17,01:40,C170,Belo Horizonte,P820,Brinde Especial,Outros,0,198.7,0.2,credit_card,website,paid
+3233,2024-10-21,14:19,C060,Curitiba,P1371,Sneaker Running Fit,Calçados,5,402.72,0.05,boleto,web,canceled
+3234,2024-10-14,23:47,C199,Campinas,P995,Smartphone X,Eletrônicos,5,627.81,0.2,cash,desktop,paid
+3235,2024-10-06,09:39,C083,Rio de Janeiro,P1538,Headphone Bass,Eletrônicos,0,2360.27,-0.5,cash,mobile_app,pending
+3236,2024-10-29,11:31,C064,Fortaleza,P1577,Relógio Clássico,Accessories,0,167.23,0.0,credit_card,marketplace,canceled
+3237,2024-10-21,14:21,C191,Recife,P1080,Jogo de Panelas,Casa,4,157.61,0.0,debit_card,website,pending
+3238,2024-10-13,04:49,C185,Rio de Janeiro,P565,Smartphone X,Eletrônicos,2,1796.52,0.15,debit_card,marketplace,returned
+3239,2024-10-18,08:52,C123,Campinas,P1213,Bola de Futebol,Esporte,3,105.24,0.0,pix,web,
+3240,2024-10-01,15:21,C147,Rio de Janeiro,P743,Jogo de Panelas,Casa,1,150.6,0.15,debit_card,desktop,pending
+3241,2024-10-21,21:48,C068,Salvador,P867,Monitor 24,Eletrônicos,1,1861.83,0.2,pix,web,returned
+3242,2024-10-04,13:13,C174,Curitiba,P1021,Item Promocional,Outros,1,124.21,2.0,credit_card,marketplace,paid
+3243,2024-10-19,19:11,C079,Campinas,P1287,Mochila Urban,Accessories,2,111.96,0.0,credit_card,desktop,paid
+3244,2024-10-21,01:18,C045,Recife,P959,Smartwatch Pro,Eletrônicos,1,1959.99,2.0,pix,mobile_app,canceled
+3245,2024-10-12,12:22,C048,Rio de Janeiro,P633,Garrafa Térmica,Esporte,0,260.92,0.1,pix,website,pending
+3246,2024-10-30,21:01,C056,Salvador,P1485,Item Promocional,Outros,0,164.33,0.2,cash,desktop,paid
+3247,2024-10-30,08:11,C078,Rio de Janeiro,P204,Bota Hiking,Calçados,4,341.15,0.15,cash,desktop,canceled
+3248,2024-10-05,02:17,C198,Brasília,P1020,Carteira Couro,Accessories,2,312.3,0.2,credit_card,marketplace,pending
+3249,2024-10-06,18:57,C069,Campinas,P1061,Fone In-Ear,Eletrônicos,0,1689.24,0.2,boleto,website,canceled
+3250,2024-10-09,02:43,C034,Campinas,P390,Sneaker Pro,Calçados,4,141.25,0.15,cash,desktop,returned
+3251,2024-10-23,01:56,C153,Campinas,P310,Liquidificador 900W,Casa,4,430.19,0.05,credit_card,website,returned
+3252,2024-10-19,07:32,C114,Campinas,P684,Sneaker Running Fit,Calçados,2,466.85,0.15,credit_card,web,pending
+3253,2024-10-12,18:15,C134,São Paulo,P911,Liquidificador 900W,Casa,1,255.99,0.15,boleto,mobile_app,paid
+3254,2024-10-28,05:46,C180,Fortaleza,P1527,Jogo de Panelas,Casa,4,217.95,0.1,debit_card,website,returned
+3255,2024-10-03,25:04,,Brasília,P524,Mouse Wireless,Eletrônicos,5,1054.4,0.05,debit_card,web,canceled
+3256,2024-10-24,02:06,C115,Rio de Janeiro,P861,Jogo de Panelas,Casa,0,317.64,0.05,cash,web,pending
+3257,2024-10-09,07:06,C046,Belo Horizonte,P1266,Produto Desconhecido,Outros,3,165.98,0.0,credit_card,marketplace,canceled
+3258,2024-10-11,20:39,C093,Fortaleza,P412,Brinde Especial,Outros,-3,151.67,0.0,cash,web,pending
+3259,2024-10-11,19:34,C118,Curitiba,P1101,Garrafa Térmica,Esporte,1,105.19,0.2,debit_card,mobile_app,pending
+3260,2024-10-03,02:18,C126,Curitiba,P1101,Relógio Clássico,Accessories,2,110.61,0.0,boleto,mobile_app,paid
+3261,2024-10-11,25:52,C118,Recife,P1463,Monitor 24,Eletrônicos,1,2507.23,0.1,pix,desktop,canceled
+3262,2024-10-21,12:37,C126,Fortaleza,P1064,Jogo de Panelas,Casa,1,143.85,0.05,credit_card,website,pending
+3263,2024-10-15,18:37,C091,Belo Horizonte,P298,Aspirador Portátil,Casa,0,153.87,0.0,credit_card,mobile_app,pending
+3264,2024-10-15,18:44,C160,Recife,P997,Mochila Urban,Accessories,5,233.22,0.05,boleto,website,pending
+3265,2024-10-05,04:54,C090,Curitiba,P1201,Carteira Couro,Accessories,5,330.25,0.15,cash,desktop,paid
+3266,2024-10-24,25:46,C149,Salvador,P782,Aspirador Portátil,Casa,3,370.07,0.15,cash,marketplace,pending
+3267,2024-10-18,12:52,C032,Brasília,P1371,Relógio Clássico,Accessories,1,217.85,1.2,debit_card,website,
+3268,2024-10-25,15:20,C182,Recife,P1050,Aspirador Portátil,Casa,5,335.18,0.05,boleto,marketplace,canceled
+3269,2024-10-30,18:38,C102,Porto Alegre,P838,Camiseta Basic,Moda,4,144.7,0.15,debit_card,web,pending
+3270,2024-10-21,18:59,C024,Rio de Janeiro,P553,Produto Desconhecido,Outros,5,203.1,0.2,boleto,website,returned
+3271,2024-10-27,09:33,C077,Recife,P470,Camisa Time,Esporte,0,132.03,0.1,boleto,marketplace,returned
+3272,2024-10-20,24:04,C113,Brasília,P535,Teclado Mecânico,Eletrônicos,4,1553.64,0.05,credit_card,marketplace,returned
+3273,2024-10-24,03:35,C174,Fortaleza,P299,Liquidificador 900W,Casa,0,288.23,0.05,boleto,desktop,pending
+3274,2024-10-23,07:52,C062,São Paulo,P353,Garrafa Térmica,Esporte,5,311.66,0.05,cash,website,returned
+3275,2024-10-25,17:31,C060,Belo Horizonte,P970,Sandália Casual,Calçados,0,245.69,0.0,pix,web,canceled
+3276,2024-10-21,05:31,C171,Curitiba,P266,Camiseta Basic,Moda,5,86.12,0.1,pix,marketplace,returned
+3277,2024-10-02,13:21,C064,Rio de Janeiro,P924,Monitor 24,Eletrônicos,2,933.9,0.2,cash,mobile_app,paid
+3278,2024-10-18,13:40,C199,Recife,P213,Bola de Futebol,Esporte,1,345.99,0.0,cash,mobile_app,pending
+3279,2024-10-05,15:04,C185,Curitiba,P155,Smartphone X,Eletrônicos,2,2187.45,0.15,boleto,mobile_app,canceled
+3280,2024-10-08,01:10,C196,Fortaleza,P532,Item Promocional,Outros,5,106.45,0.2,boleto,web,canceled
+3281,2024-10-22,04:28,C032,Fortaleza,P1485,Aspirador Portátil,Casa,-3,214.53,0.1,credit_card,marketplace,returned
+3282,2024-10-19,08:44,C051,Rio de Janeiro,P346,Relógio Clássico,Accessories,3,322.2,0.15,credit_card,web,returned
+3283,2024-10-09,17:38,C035,Curitiba,P786,Jaqueta Waterproof,Moda,5,85.93,0.1,debit_card,web,pending
+3284,2024-10-05,04:52,,Belo Horizonte,P1242,Calça Skinny,Moda,1,59.55,0.1,boleto,marketplace,paid
+3285,2024-10-02,07:20,C036,Campinas,P1331,Garrafa Térmica,Esporte,0,97.06,0.05,credit_card,web,paid
+3286,2024-10-20,22:46,C169,Belo Horizonte,P295,Monitor 24,Eletrônicos,3,2836.92,0.15,credit_card,web,pending
+3287,2024-10-25,18:57,C146,São Paulo,P610,Camiseta Basic,Moda,5,86.15,0.1,pix,web,canceled
+3288,2024-10-27,14:32,C171,São Paulo,P280,Smartwatch Pro,Eletrônicos,3,2672.0,0.0,boleto,website,paid
+3289,2024-10-26,07:22,C098,Campinas,P1321,Camiseta Basic,Moda,2,174.18,0.2,pix,marketplace,pending
+3290,2024-10-22,06:08,C168,Fortaleza,P1542,Relógio Clássico,Accessories,1,219.61,0.1,pix,marketplace,returned
+3291,2024-10-29,00:26,C191,Campinas,P1138,Liquidificador 900W,Casa,2,403.38,0.0,credit_card,marketplace,canceled
+3292,2024-10-16,18:36,C072,Fortaleza,P622,Smartwatch Pro,Eletrônicos,1,2800.66,0.0,pix,mobile_app,returned
+3293,2024-10-19,07:41,C149,São Paulo,P1463,Caixa de Som,Eletrônicos,4,940.26,0.1,boleto,website,returned
+3294,2024-10-05,15:35,C167,Rio de Janeiro,P316,Liquidificador 900W,Casa,2,426.73,0.0,cash,website,returned
+3295,2024-10-04,08:36,C121,Curitiba,P259,Aspirador Portátil,Casa,3,277.08,0.2,pix,mobile_app,returned
+3296,2024-10-22,24:05,C100,Campinas,P1597,Sneaker Pro,Calçados,5,491.89,0.15,pix,website,canceled
+3297,2024-10-14,17:40,C032,Porto Alegre,P1483,Garrafa Térmica,Esporte,2,81.12,0.2,cash,marketplace,returned
+3298,2024-10-03,13:54,C068,Curitiba,P1461,Item Promocional,Outros,2,160.84,0.15,credit_card,web,paid
+3299,2024-10-06,05:26,C046,Recife,P1374,Mochila Urban,Accessories,5,357.36,1.2,debit_card,desktop,pending
+3300,2024-10-05,04:26,C150,Curitiba,P314,Monitor 24,Eletrônicos,1,673.05,0.0,pix,mobile_app,pending
+3301,2024-10-07,13:05,C052,Brasília,P886,Item Promocional,Outros,4,234.56,0.0,cash,web,canceled
+3302,2024-10-04,15:21,C036,Rio de Janeiro,P1377,Jaqueta Waterproof,Moda,5,175.05,0.2,boleto,web,pending
+3303,2024-10-10,12:13,C169,Recife,P1494,Camisa Time,Esporte,5,270.43,0.15,debit_card,marketplace,returned
+3304,2024-10-04,13:36,C065,Salvador,P328,Aspirador Portátil,Casa,2,371.41,-0.5,debit_card,marketplace,paid
+3305,2024-10-25,05:43,C143,Campinas,P637,Sandália Casual,Calçados,5,401.29,0.0,cash,website,paid
+3306,2024-10-10,06:25,C185,Porto Alegre,P1289,Jogo de Panelas,Casa,1,263.38,0.0,debit_card,website,pending
+3307,2024-10-11,13:44,C044,Salvador,P673,Aspirador Portátil,Casa,-1,212.38,0.05,cash,desktop,canceled
+3308,2024-10-07,06:17,C067,São Paulo,P1369,Sneaker Pro,Calçados,0,258.0,0.2,cash,marketplace,paid
+3309,2024-10-10,14:15,C086,Recife,P730,Aspirador Portátil,Casa,0,161.15,0.0,debit_card,desktop,pending
+3310,2024-10-10,24:50,C043,São Paulo,P786,Bola de Futebol,Esporte,0,211.6,0.0,boleto,desktop,canceled
+3311,2024-10-16,21:58,C184,Recife,P269,Item Promocional,Outros,0,255.93,0.2,pix,web,canceled
+3312,2024-10-25,08:41,C024,Recife,P1514,Brinde Especial,Outros,0,192.55,0.15,cash,website,returned
+3313,2024-10-08,17:44,C142,Salvador,P681,Teclado Mecânico,Eletrônicos,3,2148.28,0.0,debit_card,desktop,returned
+3314,2024-10-13,07:43,C049,Rio de Janeiro,P940,Sneaker Running Fit,Calçados,5,448.51,0.1,credit_card,website,canceled
+3315,2024-10-12,09:31,C156,Recife,P1113,Bola de Futebol,Esporte,5,196.29,1.2,debit_card,desktop,returned
+3316,2024-10-11,12:30,C028,Curitiba,P200,Calça Skinny,Moda,2,266.16,0.1,boleto,mobile_app,returned
+3317,2024-10-23,13:44,C143,Curitiba,P516,Smartphone X,Eletrônicos,3,386.57,0.15,credit_card,web,returned
+3318,2024-10-15,10:05,C194,Salvador,P1435,Calça Skinny,Moda,5,270.99,0.1,boleto,web,canceled
+3319,2024-10-17,18:15,C131,Fortaleza,P1406,Camiseta Basic,Moda,0,126.13,0.0,credit_card,desktop,canceled
+3320,2024-10-12,23:22,C037,São Paulo,P1423,Item Promocional,Outros,5,257.81,0.1,boleto,desktop,canceled
+3321,2024-10-27,18:34,C027,Recife,P940,Liquidificador 900W,Casa,1,148.71,0.2,credit_card,web,canceled
+3322,2024-10-11,21:47,C151,Campinas,P703,Item Promocional,Outros,2,171.88,0.1,boleto,web,canceled
+3323,2024-10-18,17:29,C162,Salvador,P1199,Liquidificador 900W,Casa,0,214.03,0.1,boleto,web,returned
+3324,2024-10-27,03:12,C070,Rio de Janeiro,P725,Aspirador Portátil,Casa,3,194.81,0.05,cash,website,pending
+3325,2024-10-03,14:18,C151,Brasília,P1572,Produto Desconhecido,Outros,4,260.87,0.2,boleto,mobile_app,pending
+3326,2024-10-04,20:15,C183,São Paulo,P559,Bola de Futebol,Esporte,5,206.24,0.05,credit_card,web,pending
+3327,2024-10-28,03:10,C196,Porto Alegre,P1445,Aspirador Portátil,Casa,1,205.95,0.0,cash,desktop,paid
+3328,2024-10-01,24:22,C162,Belo Horizonte,P599,Relógio Clássico,Accessories,0,256.25,0.1,credit_card,web,returned
+3329,2024-10-14,08:27,C045,Belo Horizonte,P413,Smartwatch Pro,Eletrônicos,5,2186.54,0.1,boleto,mobile_app,canceled
+3330,2024-10-22,20:16,C154,Brasília,P1193,Teclado Mecânico,Eletrônicos,0,1031.42,0.1,cash,marketplace,canceled
+3331,2024-10-14,20:50,C063,Porto Alegre,P474,Fone In-Ear,Eletrônicos,3,1927.28,0.1,credit_card,website,canceled
+3332,2024-10-17,03:04,C194,Recife,P1045,Bola de Futebol,Esporte,0,150.45,0.0,boleto,website,pending
+3333,2024-10-21,11:37,C146,Campinas,P524,Item Promocional,Outros,2,164.95,-0.5,cash,website,returned
+3334,2024-10-02,09:18,C080,Belo Horizonte,P259,Jaqueta Waterproof,Moda,1,232.89,2.0,boleto,desktop,returned
+3335,2024-10-16,10:28,C118,São Paulo,P263,Relógio Clássico,Accessories,5,182.15,0.1,pix,website,pending
+3336,2024-10-20,12:37,C098,Campinas,P284,Relógio Clássico,Accessories,3,223.78,0.0,credit_card,mobile_app,paid
+3337,2024-10-16,09:54,C022,Brasília,P506,Aspirador Portátil,Casa,0,447.61,0.2,cash,website,canceled
+3338,2024-10-10,22:45,C180,Salvador,P985,Brinde Especial,Outros,0,142.89,0.1,boleto,mobile_app,returned
+3339,2024-10-23,17:56,C027,Porto Alegre,P666,Item Promocional,Outros,4,296.25,0.1,pix,web,paid
+3340,2024-10-09,01:40,C155,Curitiba,P808,Liquidificador 900W,Casa,4,314.69,0.1,cash,marketplace,returned
+3341,2024-10-06,19:05,C146,Campinas,P1512,Sandália Casual,Calçados,0,207.24,0.1,boleto,web,paid
+3342,2024-10-24,03:13,C066,Recife,P1041,Camisa Time,Esporte,0,68.76,0.15,cash,mobile_app,
+3343,2024-10-31,19:21,C129,Rio de Janeiro,P372,Smartphone X,Eletrônicos,1,2652.35,0.0,boleto,desktop,paid
+3344,2024-10-18,16:32,C169,São Paulo,P139,Bota Hiking,Calçados,5,171.65,0.1,pix,website,canceled
+3345,2024-10-14,04:41,C139,Curitiba,P658,Carteira Couro,Accessories,5,278.01,0.15,credit_card,mobile_app,returned
+3346,2024-10-04,23:24,C105,Belo Horizonte,P930,Camisa Time,Esporte,5,232.62,0.15,debit_card,website,returned
+3347,2024-10-05,12:19,C119,Fortaleza,P883,Mochila Urban,Accessories,5,331.14,0.15,cash,desktop,returned
+3348,2024-10-09,23:46,C170,Rio de Janeiro,P1335,Jaqueta Waterproof,Moda,3,181.77,0.2,credit_card,web,pending
+3349,2024-10-23,24:23,C156,Campinas,P339,Relógio Clássico,Accessories,-1,210.02,0.1,credit_card,web,paid
+3350,2024-10-11,12:20,C063,Rio de Janeiro,P1072,Jaqueta Jeans,Moda,1,104.78,0.1,debit_card,mobile_app,paid
+3351,2024-10-01,13:52,C042,São Paulo,P307,Carteira Couro,Accessories,0,91.72,0.2,credit_card,web,canceled
+3352,2024-10-12,05:24,C197,Brasília,P1028,Bota Hiking,Calçados,2,233.15,0.05,pix,web,paid
+3353,2024-10-28,18:00,C123,São Paulo,P955,Aspirador Portátil,Casa,2,423.6,0.05,boleto,desktop,paid
+3354,2024-10-04,21:48,C127,Fortaleza,P1600,Smartwatch Pro,Eletrônicos,0,1183.36,0.0,credit_card,desktop,canceled
+3355,2024-10-04,16:10,C046,Belo Horizonte,P416,Mouse Wireless,Eletrônicos,2,1909.03,0.1,credit_card,desktop,pending
+3356,2024-10-31,05:03,C081,Salvador,P645,Aspirador Portátil,Casa,5,385.8,0.05,cash,mobile_app,paid
+3357,2024-10-26,11:50,C049,Campinas,P1064,Brinde Especial,Outros,4,212.51,0.2,cash,website,paid
+3358,2024-10-23,11:53,C131,Porto Alegre,P1179,Jaqueta Jeans,Moda,1,109.85,0.15,pix,website,pending
+3359,2024-10-16,08:27,C148,Salvador,P1041,Garrafa Térmica,Esporte,5,155.04,0.15,credit_card,desktop,paid
+3360,2024-10-11,19:35,C041,Brasília,P1144,Bola de Futebol,Esporte,4,263.74,0.2,credit_card,web,pending
+3361,2024-10-18,20:28,C130,Belo Horizonte,P1472,Camisa Time,Esporte,2,279.48,0.05,pix,website,paid
+3362,2024-10-22,00:04,C196,Belo Horizonte,P676,Item Promocional,Outros,4,102.31,0.05,boleto,desktop,canceled
+3363,2024-10-07,18:30,C065,São Paulo,P375,Calça Skinny,Moda,2,289.92,0.15,pix,marketplace,canceled
+3364,2024-10-21,07:59,C172,Curitiba,P1557,Camiseta Basic,Moda,2,153.45,0.05,boleto,website,returned
+3365,2024-10-04,14:43,C126,Rio de Janeiro,P742,Camisa Time,Esporte,1,120.95,0.05,boleto,mobile_app,
+3366,2024-10-13,19:27,C174,Recife,P1345,Notebook Slim 14,Eletrônicos,4,201.71,0.2,boleto,website,returned
+3367,2024-10-27,23:30,C163,Curitiba,P127,Mochila Urban,Accessories,2,240.87,0.0,debit_card,mobile_app,returned
+3368,2024-10-10,14:52,C034,Porto Alegre,P574,Smartwatch Pro,Eletrônicos,3,2337.76,0.05,debit_card,desktop,returned
+3369,2024-10-23,14:09,C027,Salvador,P347,Camiseta Basic,Moda,0,236.8,0.05,credit_card,desktop,returned
+3370,2024-10-28,05:04,C076,Campinas,P1325,Monitor 24,Eletrônicos,5,1309.8,0.0,cash,website,canceled
+3371,2024-10-30,13:07,C135,Brasília,P519,Aspirador Portátil,Casa,5,237.95,0.15,debit_card,web,returned
+3372,2024-10-13,07:27,C166,Belo Horizonte,P562,Brinde Especial,Outros,0,30.51,0.2,credit_card,web,paid
+3373,2024-10-14,07:30,C024,Belo Horizonte,P391,Headphone Bass,Eletrônicos,1,430.64,0.05,boleto,marketplace,pending
+3374,2024-10-07,06:40,C196,Salvador,P833,Sneaker Pro,Calçados,0,460.79,0.2,cash,desktop,canceled
+3375,2024-10-29,11:58,C166,São Paulo,P1575,Monitor 24,Eletrônicos,1,1818.69,0.05,debit_card,mobile_app,canceled
+3376,2024-10-19,21:42,C176,Porto Alegre,P357,Brinde Especial,Outros,5,295.7,0.0,boleto,web,canceled
+3377,2024-10-17,03:24,C066,Curitiba,P1380,Sandália Casual,Calçados,3,447.15,-0.5,pix,marketplace,paid
+3378,2024-10-18,13:42,C141,Recife,P1199,Carteira Couro,Accessories,5,285.94,0.2,credit_card,web,canceled
+3379,2024-10-30,22:54,C053,Salvador,P1141,Fone In-Ear,Eletrônicos,-3,2008.44,0.2,pix,web,paid
+3380,2024-10-09,08:29,C047,Porto Alegre,P1529,Brinde Especial,Outros,2,280.92,0.05,credit_card,marketplace,paid
+3381,2024-10-02,23:12,C161,Recife,P1344,Jaqueta Jeans,Moda,4,297.52,0.05,cash,web,returned
+3382,2024-10-22,20:23,C110,Salvador,P274,Jogo de Panelas,Casa,5,181.36,0.15,cash,web,canceled
+3383,2024-10-29,07:18,C066,Porto Alegre,P1115,Camisa Time,Esporte,4,175.75,0.05,pix,desktop,canceled
+3384,2024-10-21,03:20,C021,Salvador,P1330,Jaqueta Jeans,Moda,3,286.77,0.2,debit_card,website,canceled
+3385,2024-10-19,08:17,C126,Campinas,P1158,Monitor 24,Eletrônicos,1,2370.21,0.05,boleto,web,pending
+3386,2024-10-02,07:59,C177,Rio de Janeiro,P399,Sneaker Running Fit,Calçados,0,291.73,0.15,cash,marketplace,paid
+3387,2024-10-28,04:10,C060,Rio de Janeiro,P1423,Headphone Bass,Eletrônicos,3,1594.69,0.1,debit_card,web,pending
+3388,2024-10-28,05:27,C101,Curitiba,P1406,Carteira Couro,Accessories,0,307.35,0.1,credit_card,website,returned
+3389,2024-10-25,16:47,C053,Brasília,P164,Mouse Wireless,Eletrônicos,2,873.17,0.1,pix,mobile_app,canceled
+3390,2024-10-21,12:14,C070,Campinas,P596,Carteira Couro,Accessories,2,192.68,0.2,debit_card,website,pending
+3391,2024-10-13,20:01,C193,Belo Horizonte,P1094,Camisa Time,Esporte,3,335.29,0.15,pix,marketplace,canceled
+3392,2024-10-13,06:06,C170,Rio de Janeiro,P488,Sneaker Running Fit,Calçados,0,371.0,-0.5,boleto,marketplace,canceled
+3393,2024-10-27,25:07,C022,Fortaleza,P1119,Bola de Futebol,Esporte,0,251.99,0.0,boleto,desktop,returned
+3394,2024-10-31,22:09,C173,Recife,P1084,Carteira Couro,Accessories,3,211.9,2.0,cash,marketplace,returned
+3395,2024-10-20,14:43,C084,Rio de Janeiro,P1281,Brinde Especial,Outros,3,215.22,0.1,pix,desktop,canceled
+3396,2024-10-31,08:30,C088,Curitiba,P1237,Mochila Urban,Accessories,2,144.48,0.2,pix,mobile_app,canceled
+3397,2024-10-27,06:41,C159,Fortaleza,P1432,Liquidificador 900W,Casa,5,328.36,0.15,debit_card,website,pending
+3398,2024-10-11,18:38,C103,Brasília,P543,Item Promocional,Outros,3,231.42,0.2,boleto,web,returned
+3399,2024-10-20,19:15,C175,São Paulo,P1097,Mochila Urban,Accessories,5,159.03,0.05,boleto,desktop,paid
+3400,2024-10-13,02:15,C161,Recife,P890,Jaqueta Waterproof,Moda,1,96.67,0.05,pix,website,returned
+3401,2024-10-30,17:24,C023,Porto Alegre,P387,Carteira Couro,Accessories,-3,204.97,0.0,credit_card,mobile_app,pending
+3402,2024-10-31,09:07,C087,Recife,P850,Aspirador Portátil,Casa,1,305.41,0.1,debit_card,website,returned
+3403,2024-10-15,21:39,C031,Brasília,P231,Smartphone X,Eletrônicos,3,2161.28,0.05,pix,desktop,returned
+3404,2024-10-30,02:30,C046,Fortaleza,P588,Garrafa Térmica,Esporte,0,178.88,0.1,pix,website,pending
+3405,2024-10-05,19:31,C182,Curitiba,P937,Garrafa Térmica,Esporte,1,157.18,0.05,credit_card,desktop,returned
+3406,2024-10-10,12:12,C052,São Paulo,P141,Mouse Wireless,Eletrônicos,1,1994.42,0.2,pix,web,paid
+3407,2024-10-25,14:13,C139,Salvador,P210,Jogo de Panelas,Casa,3,317.16,0.05,pix,website,pending
+3408,2024-10-25,24:07,C167,Campinas,P187,Mochila Urban,Accessories,5,174.36,0.0,cash,marketplace,canceled
+3409,2024-10-09,02:42,C085,Curitiba,P638,Jogo de Panelas,Casa,5,257.67,0.05,pix,desktop,paid
+3410,2024-10-01,20:40,C114,Brasília,P359,Jogo de Panelas,Casa,1,215.03,0.1,cash,marketplace,pending
+3411,2024-10-29,18:10,C116,São Paulo,P902,Aspirador Portátil,Casa,3,271.47,0.1,debit_card,website,paid
+3412,2024-10-01,13:49,C196,Rio de Janeiro,P1253,Teclado Mecânico,Eletrônicos,1,2599.54,0.2,pix,web,paid
+3413,2024-10-24,09:21,C142,Belo Horizonte,P724,Produto Desconhecido,Outros,1,284.03,0.1,cash,website,paid
+3414,2024-10-06,06:15,C045,Fortaleza,P410,Headphone Bass,Eletrônicos,4,1503.84,1.2,credit_card,marketplace,paid
+3415,2024-10-12,24:45,C190,São Paulo,P592,Teclado Mecânico,Eletrônicos,2,2598.06,0.2,cash,web,canceled
+3416,2024-10-21,08:09,C173,Curitiba,P1431,Camiseta Basic,Moda,5,195.9,0.05,cash,marketplace,canceled
+3417,2024-10-16,13:00,C174,Curitiba,P954,Sandália Casual,Calçados,5,436.02,0.0,debit_card,web,paid
+3418,2024-10-17,23:18,C124,Salvador,P550,Sneaker Pro,Calçados,1,488.12,0.05,boleto,desktop,pending
+3419,2024-10-06,23:25,C075,São Paulo,P1300,Produto Desconhecido,Outros,5,38.05,0.2,credit_card,desktop,canceled
+3420,2024-10-02,04:52,C069,Belo Horizonte,P566,Carteira Couro,Accessories,4,276.53,0.2,cash,website,canceled
+3421,2024-10-15,15:26,C102,Recife,P421,Sneaker Running Fit,Calçados,2,370.85,0.05,credit_card,marketplace,returned
+3422,2024-10-23,14:40,C108,Belo Horizonte,P1076,Jaqueta Waterproof,Moda,3,138.98,0.0,debit_card,desktop,paid
+3423,2024-10-06,20:09,C106,Curitiba,P1340,Bola de Futebol,Esporte,2,157.34,0.05,credit_card,website,returned
+3424,2024-10-23,05:49,C077,Fortaleza,P167,Smartwatch Pro,Eletrônicos,2,1770.59,0.1,cash,mobile_app,returned
+3425,2024-10-04,08:53,C140,São Paulo,P140,Garrafa Térmica,Esporte,0,263.1,0.05,pix,marketplace,returned
+3426,2024-10-06,01:14,C030,Brasília,P1271,Bota Hiking,Calçados,4,279.11,0.05,pix,web,paid
+3427,2024-10-19,07:48,C033,São Paulo,P361,Sandália Casual,Calçados,2,446.55,0.05,debit_card,mobile_app,pending
+3428,2024-10-01,21:07,C155,Fortaleza,P423,Smartphone X,Eletrônicos,0,2116.91,0.1,credit_card,desktop,canceled
+3429,2024-10-31,23:35,C161,Porto Alegre,P299,Liquidificador 900W,Casa,0,155.0,0.2,credit_card,mobile_app,returned
+3430,2024-10-20,00:13,,Campinas,P1142,Camisa Time,Esporte,2,151.07,0.2,pix,desktop,paid
+3431,2024-10-25,21:12,C124,Porto Alegre,P1404,Jaqueta Waterproof,Moda,0,105.0,0.0,boleto,web,returned
+3432,2024-10-12,18:14,C171,Curitiba,P400,Garrafa Térmica,Esporte,2,65.76,0.15,debit_card,mobile_app,canceled
+3433,2024-10-23,02:49,C094,São Paulo,P379,Notebook Slim 14,Eletrônicos,5,2102.68,0.0,pix,web,canceled
+3434,2024-10-24,03:47,C089,Belo Horizonte,P1092,Mouse Wireless,Eletrônicos,4,2854.36,0.15,pix,mobile_app,paid
+3435,2024-10-08,00:37,C193,Campinas,P1411,Mouse Wireless,Eletrônicos,0,1892.49,0.15,pix,website,returned
+3436,2024-10-01,00:28,C168,Belo Horizonte,P1361,Mochila Urban,Accessories,1,292.25,0.1,pix,marketplace,returned
+3437,2024-10-28,03:08,C132,São Paulo,P302,Relógio Clássico,Accessories,0,207.51,0.2,cash,web,canceled
+3438,2024-10-27,25:53,C032,Salvador,P1053,Liquidificador 900W,Casa,4,281.89,0.2,pix,web,paid
+3439,2024-10-23,22:28,C175,Campinas,P779,Mouse Wireless,Eletrônicos,1,516.38,0.15,debit_card,desktop,canceled
+3440,2024-10-21,02:59,C156,Salvador,P743,Aspirador Portátil,Casa,5,307.99,0.0,credit_card,desktop,paid
+3441,2024-10-17,03:55,C066,Salvador,P1203,Jogo de Panelas,Casa,-3,226.02,0.05,cash,web,returned
+3442,2024-10-27,04:55,C060,Porto Alegre,P1141,Mochila Urban,Accessories,2,110.58,0.2,boleto,web,pending
+3443,2024-10-24,08:43,C077,Campinas,P675,Jaqueta Jeans,Moda,2,210.24,0.2,pix,website,paid
+3444,2024-10-05,14:04,C121,São Paulo,P1513,Sneaker Pro,Calçados,-1,380.2,0.1,pix,mobile_app,canceled
+3445,2024-10-20,10:13,C037,São Paulo,P938,Bola de Futebol,Esporte,4,235.33,0.1,cash,mobile_app,paid
+3446,2024-10-05,13:42,C184,Rio de Janeiro,P1260,Calça Skinny,Moda,5,273.71,0.0,debit_card,web,paid
+3447,2024-10-31,20:50,C127,Salvador,P140,Notebook Slim 14,Eletrônicos,-1,1058.11,0.1,credit_card,desktop,canceled
+3448,2024-10-29,20:37,C137,Porto Alegre,P115,Camiseta Basic,Moda,5,174.25,0.2,pix,web,pending
+3449,2024-10-01,03:41,C162,Recife,P1044,Caixa de Som,Eletrônicos,2,1570.68,0.1,pix,marketplace,pending
+3450,2024-10-02,01:09,C022,Fortaleza,P1464,Caixa de Som,Eletrônicos,-3,2186.19,0.15,credit_card,marketplace,returned
+3451,2024-10-28,21:24,C043,Brasília,P476,Sneaker Running Fit,Calçados,4,401.96,0.05,boleto,web,paid
+3452,2024-10-06,14:04,C105,São Paulo,P632,Notebook Slim 14,Eletrônicos,5,2717.94,-0.5,debit_card,web,paid
+3453,2024-10-01,11:49,C075,Campinas,P1386,Carteira Couro,Accessories,0,292.05,0.05,debit_card,marketplace,pending
+3454,2024-10-29,19:32,C142,Belo Horizonte,P1016,Camisa Time,Esporte,1,213.95,0.0,cash,web,returned
+3455,2024-10-27,16:43,C091,Porto Alegre,P591,Mochila Urban,Accessories,5,202.69,0.1,cash,website,paid
+3456,2024-10-01,09:54,C058,Porto Alegre,P604,Produto Desconhecido,Outros,3,167.82,-0.5,boleto,mobile_app,paid
+3457,2024-10-27,03:05,C083,Salvador,P193,Relógio Clássico,Accessories,4,373.6,0.2,credit_card,website,canceled
+3458,2024-10-27,18:53,C139,São Paulo,P526,Bola de Futebol,Esporte,4,135.45,0.0,pix,marketplace,returned
+3459,2024-10-19,10:54,C041,Brasília,P165,Bola de Futebol,Esporte,3,125.81,0.15,credit_card,desktop,returned
+3460,2024-10-12,03:52,C140,Fortaleza,P339,Camiseta Basic,Moda,2,238.17,0.15,debit_card,mobile_app,pending
+3461,2024-10-28,09:48,C097,Curitiba,P534,Sneaker Running Fit,Calçados,4,411.69,0.1,debit_card,mobile_app,pending
+3462,2024-10-15,22:02,C193,Brasília,P312,Headphone Bass,Eletrônicos,0,1432.59,0.0,debit_card,desktop,returned
+3463,2024-10-06,09:16,C144,Recife,P1130,Bola de Futebol,Esporte,1,210.02,0.1,boleto,desktop,paid
+3464,2024-10-16,18:12,C196,Recife,P1333,Teclado Mecânico,Eletrônicos,0,2291.64,0.2,credit_card,website,canceled
+3465,2024-10-04,24:33,C047,Curitiba,P1436,Relógio Clássico,Accessories,1,383.89,0.05,pix,mobile_app,returned
+3466,2024-10-17,07:23,C056,Salvador,P1249,Jogo de Panelas,Casa,-3,355.59,0.05,pix,mobile_app,pending
+3467,2024-10-15,13:49,C111,Rio de Janeiro,P1494,Headphone Bass,Eletrônicos,2,912.65,0.2,pix,mobile_app,returned
+3468,2024-10-07,22:50,C109,São Paulo,P1156,Camisa Time,Esporte,0,258.25,0.15,pix,marketplace,pending
+3469,2024-10-01,22:41,C092,Recife,P514,Camiseta Basic,Moda,2,165.98,0.15,pix,website,returned
+3470,2024-10-03,17:34,C068,Brasília,P397,Relógio Clássico,Accessories,1,88.94,0.1,pix,marketplace,returned
+3471,2024-10-20,24:13,C161,Curitiba,P842,Sneaker Pro,Calçados,1,271.55,0.15,debit_card,desktop,pending
+3472,2024-10-11,00:04,C067,Brasília,P880,Item Promocional,Outros,1,69.28,0.0,credit_card,mobile_app,paid
+3473,2024-10-10,11:53,C130,Porto Alegre,P804,Jaqueta Jeans,Moda,0,293.37,0.2,debit_card,web,paid
+3474,2024-10-05,07:32,C065,Rio de Janeiro,P483,Jaqueta Waterproof,Moda,5,203.77,0.1,debit_card,website,pending
+3475,2024-10-21,16:47,C069,Curitiba,P975,Carteira Couro,Accessories,5,111.8,0.2,credit_card,desktop,pending
+3476,2024-10-09,08:31,C075,Fortaleza,P1139,Carteira Couro,Accessories,4,79.98,0.15,debit_card,desktop,canceled
+3477,2024-10-04,22:24,C123,Rio de Janeiro,P930,Camisa Time,Esporte,2,295.78,0.15,boleto,desktop,canceled
+3478,2024-10-31,20:58,C120,Curitiba,P639,Jogo de Panelas,Casa,0,298.37,0.1,boleto,desktop,paid
+3479,2024-10-01,05:18,C171,Curitiba,P1342,Relógio Clássico,Accessories,2,344.15,0.1,credit_card,marketplace,canceled
+3480,2024-10-27,25:48,C149,Campinas,P903,Garrafa Térmica,Esporte,4,334.0,0.15,cash,desktop,canceled
+3481,2024-10-10,18:28,C153,Recife,P374,Bola de Futebol,Esporte,1,177.04,0.1,boleto,desktop,paid
+3482,2024-10-19,00:42,C106,Fortaleza,P1138,Liquidificador 900W,Casa,1,326.56,0.2,cash,desktop,canceled
+3483,2024-10-24,25:52,C181,Brasília,P167,Camiseta Basic,Moda,4,44.2,0.05,cash,mobile_app,pending
+3484,2024-10-14,04:40,C026,Curitiba,P1536,Mochila Urban,Accessories,0,157.9,0.1,credit_card,desktop,pending
+3485,2024-10-13,01:53,C146,Salvador,P741,Aspirador Portátil,Casa,-3,335.03,0.2,boleto,mobile_app,pending
+3486,2024-10-12,15:22,C167,Recife,P1167,Camisa Time,Esporte,1,126.36,0.05,credit_card,mobile_app,returned
+3487,2024-10-07,00:32,C093,Campinas,P977,Bota Hiking,Calçados,5,185.79,0.0,credit_card,web,paid
+3488,2024-10-25,02:09,C172,Campinas,P771,Teclado Mecânico,Eletrônicos,2,1685.0,0.0,credit_card,web,
+3489,2024-10-19,07:43,C103,Campinas,P1594,Item Promocional,Outros,3,107.1,0.05,pix,desktop,paid
+3490,2024-10-16,12:51,C169,Porto Alegre,P700,Liquidificador 900W,Casa,3,169.88,0.05,debit_card,marketplace,canceled
+3491,2024-10-12,02:49,C097,São Paulo,P1512,Garrafa Térmica,Esporte,4,115.0,0.15,credit_card,marketplace,pending
+3492,2024-10-04,09:57,,Brasília,P203,Jaqueta Jeans,Moda,3,155.46,0.2,credit_card,desktop,returned
+3493,2024-10-31,20:12,C177,Campinas,P432,Fone In-Ear,Eletrônicos,1,2465.53,0.1,credit_card,marketplace,canceled
+3494,2024-10-17,23:51,C079,São Paulo,P420,Calça Skinny,Moda,3,51.24,0.15,cash,marketplace,returned
+3495,2024-10-21,18:07,C134,Fortaleza,P1299,Calça Skinny,Moda,2,213.89,0.1,pix,desktop,returned
+3496,2024-10-29,24:23,C078,Brasília,P1221,Brinde Especial,Outros,5,87.31,0.05,debit_card,mobile_app,pending
+3497,2024-10-09,03:13,C196,Curitiba,P1259,Sandália Casual,Calçados,2,326.61,0.1,pix,marketplace,returned
+3498,2024-10-21,18:52,C185,Porto Alegre,P1221,Notebook Slim 14,Eletrônicos,1,2432.54,0.2,debit_card,website,pending
+3499,2024-10-16,03:53,C146,Curitiba,P282,Relógio Clássico,Accessories,0,389.0,0.2,pix,mobile_app,canceled
+3500,2024-10-05,07:45,C125,Fortaleza,P388,Headphone Bass,Eletrônicos,0,1562.16,0.0,boleto,web,paid
+3501,2024-10-26,21:17,C074,Salvador,P686,Jaqueta Jeans,Moda,1,242.31,2.0,cash,desktop,returned
+3502,2024-10-03,22:45,C032,Brasília,P1377,Calça Skinny,Moda,2,242.09,0.0,boleto,website,paid
+3503,2024-10-11,25:43,C114,Porto Alegre,P150,Brinde Especial,Outros,2,260.42,0.1,credit_card,website,pending
+3504,2024-10-06,24:24,,Rio de Janeiro,P1056,Camiseta Basic,Moda,3,186.03,0.15,pix,marketplace,
+3505,2024-10-10,19:56,C066,Campinas,P981,Jaqueta Jeans,Moda,5,210.52,0.2,debit_card,website,pending
+3506,2024-10-07,13:54,C146,São Paulo,P771,Item Promocional,Outros,3,77.01,0.1,credit_card,website,canceled
+3507,2024-10-06,11:37,C185,Campinas,P877,Camisa Time,Esporte,5,191.02,0.1,pix,desktop,returned
+3508,2024-10-12,17:25,C143,Fortaleza,P574,Jaqueta Jeans,Moda,4,92.64,0.05,pix,web,paid

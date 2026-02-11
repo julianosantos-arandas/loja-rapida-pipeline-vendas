@@ -1,0 +1,1 @@
+# Loja Rápida - Pipeline de Vendas

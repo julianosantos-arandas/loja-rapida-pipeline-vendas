@@ -1,0 +1,1 @@
+Novas queries adcinadas, receita paid, receita return, receita cancelled, regras de negócios definidas.
