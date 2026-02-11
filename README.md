@@ -1,50 +1,56 @@
-# Loja Rápida - Pipeline de Vendas
+ Loja Rápida — Pipeline de Vendas
+Sobre o projeto
 
+Este é meu primeiro projeto completo de engenharia de dados.
 
+O objetivo foi organizar planilhas de vendas de uma loja fictícia chamada Loja Rápida, que não possuía um processo estruturado para acompanhar métricas, faturamento e qualidade dos dados.
 
-## Problema
-A loja fictícia tem várias planilhas soltas de vendas. Sem padrão, ela não consegue acompanhar faturamento, ticket médio ou devoluções. Falta um processo ETL para tirar os dados do caos e entregar algo confiável para análise.
+A partir desse problema, desenvolvi um pipeline simples em Python com SQLite, organizando os dados em camadas e criando visualizações para análise.
 
-## Objetivo
-Construir um ETL básico que leia CSVs, valide, limpe, carregue no SQLite e gere views/CSVs prontos para BI. Ideia é ter um fluxo repetível e auditável, fácil de entender.
+Problema
 
-## O que é
-- Pipeline pequeno para organizar dados de vendas de uma loja fictícia.
-- Usa Python (pandas + sqlite3) para montar base limpa e views em SQL.
-- Exporta CSVs prontos para BI em `data/bi`.
+A loja trabalhava apenas com planilhas soltas, o que gerava:
 
-## Como preparar o ambiente
-- Python 3.11+ resolve. Se existir `requirements.txt`, rode `pip install -r requirements.txt`.
-- Tudo roda local, o banco é SQLite em `data/processed/database/loja_rapida.db`.
+Dificuldade para acompanhar faturamento mensal
 
-## Passo a passo para rodar
-- Coloque os CSVs brutos em `data/raw` (qualquer nome, mas precisa terminar com `.csv`).
-- Execute o pipeline: `python src/pipelines/pipeline_vendas.py`
-  - Limpa os dados, separa em camadas e carrega no SQLite.
-- Exporte as views para BI: `python src/export/export_views_to_csv.py`
-  - Cria CSVs em `data/bi` organizados por pastas (analytics, quality, kpis, base, time_analysis).
+Falta de controle sobre vendas inconsistentes
 
-## O que o pipeline faz
-- Lê todos os CSVs de `data/raw` e concatena.
-- Valida datas, horários e números (quantidade, preço, desconto) e remove linhas inválidas.
-- Salva a base preparada em `data/processed/base/vendas_prepared.csv`.
-- Gera subconjuntos: financeiros (paid/returned) e excluídos (pending/canceled).
-- Identifica registros financeiros com problemas e guarda em `vendas_inconsistentes`.
-- Recria as tabelas/views definidas em `sql/ddl` e `sql/views` no banco SQLite.
+Ausência de indicadores claros (ticket médio, produtos mais vendidos etc.)
 
-## Estrutura principal
-- `src/pipelines/pipeline_vendas.py` → limpeza, splits e carga no SQLite.
-- `src/export/export_views_to_csv.py` → exporta cada view para CSVs de BI.
-- `sql/ddl` → criação de tabelas base (`vendas`, `vendas_inconsistentes`).
-- `sql/views` → views de base, analytics, qualidade, KPIs e análise por hora.
-- `data/raw` → entrada bruta (coloque seus CSVs aqui).
-- `data/processed` → saídas do pipeline (não versionar).
-- `data/bi` → CSVs finais para dashboards.
+Risco de erro manual
 
-## Testes rápidos
-- Se tiver testes, rode `pytest` na raiz.
-- Sem testes? Abra o SQLite (`sqlite3 data/processed/database/loja_rapida.db`) e confira se a tabela `vendas` tem linhas.
+Solução
 
-## Dicas finais
-- Sempre rode o pipeline antes de exportar para BI.
-- Alterou alguma view SQL? Rode o pipeline de novo para recriar tudo no banco.
+Foi desenvolvido um pipeline com as seguintes etapas:
+
+Ingestão de dados brutos
+
+Tratamento e validações técnicas
+
+Separação de vendas inconsistentes
+
+Criação de views analíticas
+
+Exportação para BI
+
+O que aprendi
+
+Organização de estrutura de projeto
+
+Uso de SQLite com Python
+
+Separação de camadas (base, quality, analytics)
+
+Boas práticas básicas de versionamento com Git
+
+Tecnologias utilizadas
+
+Python
+
+Pandas
+
+SQLite
+
+Git
+
+Power BI
