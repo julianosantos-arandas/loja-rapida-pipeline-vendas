@@ -1,11 +1,14 @@
 DROP VIEW IF EXISTS vw_kpis_resultado_liquido_final;
+
 CREATE VIEW vw_kpis_resultado_liquido_final AS
 SELECT
     ROUND(
         SUM(
-            CAST(COALESCE(valores_pagos, 0) AS REAL)
-        - CAST(COALESCE(valores_devolvidos, 0) AS REAL)
+            CASE
+                WHEN order_status = 'paid' THEN valor_linha_rs
+                WHEN order_status = 'returned' THEN -valor_linha_rs
+            END
         ),
         2
     ) AS resultado_liquido
-FROM vw_analytics_vendas_financeiras;
+FROM vw_base_vendas_financeiras;

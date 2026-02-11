@@ -3,22 +3,12 @@ import os
 import sqlite3
 import pandas as pd
 from pathlib import Path
-from dotenv import load_dotenv
-
-# carregar variáveis de ambiente
-load_dotenv()
-# bloco 2
-PROJECT_ROOT = os.getenv("PROJECT_ROOT")
-if not PROJECT_ROOT:
-    raise EnvironmentError(
-        "Variável de ambiente PROJECT_ROOT não definida. "
-        "Crie um arquivo .env ou defina a variável no sistema."
-    )
 
 # bloco 3
-BASE_DIR = Path(PROJECT_ROOT)
-DB_PATH = BASE_DIR / "data" / "processed" / "loja_rapida.db"
+BASE_DIR = Path(__file__).resolve().parents[2]
+DB_PATH = BASE_DIR / "data" / "processed" / "database" / "loja_rapida.db"
 BI_DIR = BASE_DIR / "data" / "bi"
+
 
 EXPORT_MAP = {
     "vw_analytics_faturamento_mensal": ("analytics", "faturamento_mensal.csv"),

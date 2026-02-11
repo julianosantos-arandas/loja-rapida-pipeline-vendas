@@ -3,23 +3,30 @@ import pandas as pd
 import sqlite3
 from pathlib import Path
 
-RAW_DATA_DIR = os.path.join("data", "raw")
-PROCESSED_DATA_DIR = os.path.join("data", "processed")
+from pathlib import Path
 
-BASE_DIR = os.path.join(PROCESSED_DATA_DIR, "base")
-QUALITY_DIR = os.path.join(PROCESSED_DATA_DIR, "quality")
-ANALYTICS_DIR = os.path.join(PROCESSED_DATA_DIR, "analytics")
-DATABASE_DIR = os.path.join(PROCESSED_DATA_DIR, "database")
+# Diretório raiz do projeto (Loja_Rapida_p_v)
+BASE_DIR = Path(__file__).resolve().parents[2]
 
-DB_PATH = os.path.join(DATABASE_DIR, "loja_rapida.db")
+DATA_DIR = BASE_DIR / "data"
+RAW_DATA_DIR = DATA_DIR / "raw"
+PROCESSED_DATA_DIR = DATA_DIR / "processed"
+
+BASE_LAYER_DIR = PROCESSED_DATA_DIR / "base"
+QUALITY_DIR = PROCESSED_DATA_DIR / "quality"
+ANALYTICS_DIR = PROCESSED_DATA_DIR / "analytics"
+DATABASE_DIR = PROCESSED_DATA_DIR / "database"
+
+DB_PATH = DATABASE_DIR / "loja_rapida.db"
 
 for directory in [
-    BASE_DIR,
+    BASE_LAYER_DIR,
     QUALITY_DIR,
     ANALYTICS_DIR,
     DATABASE_DIR,
 ]:
-    os.makedirs(directory, exist_ok=True)
+    directory.mkdir(parents=True, exist_ok=True)
+
 
 
 def load_all_sales_file():
@@ -41,15 +48,6 @@ def load_all_sales_file():
             # pd.concat(dfs, ignore_index=True) junta (concatena) todos os DataFrames da lista dfs em um único DataFrame.
     return pd.concat(dfs, ignore_index=True)
 
-
-def load_reference_clean_sales():
-    """Carregar o arquivo de vendas limpo (gabarito) da pasta PROCESSED_DATA_DIR."""
-
-    clean_path = os.path.join(BASE_DIR, "vendas_2024-11_clean.csv")
-
-    return pd.read_csv(clean_path)
-
-
 def run_raw_pipeline():
     """Executar o pipeline de dados brutos e preparar a base para comparação com o gabarito clean."""
     print("LENDO CSV")
@@ -57,18 +55,14 @@ def run_raw_pipeline():
 
     print(f"Total de linhas carregadas de raw: {len(df_raw)}")
 
-    df_clean_ref = load_reference_clean_sales()
-
-    print(f"Total de linhas no gabarito clean: {len(df_clean_ref)}")
-
     df_prepared = clean_raw_sales(df_raw)
     
     run_excluded(df_prepared)
 
     run_financial(df_prepared)
     
-    output_path = os.path.join(BASE_DIR, "vendas_prepared.csv")
-    
+    output_path = BASE_LAYER_DIR / "vendas_prepared.csv"
+
     df_prepared.to_csv(output_path, index=False)
     
     print(f"Arquivo preparado salvo em: {output_path}")
@@ -113,12 +107,6 @@ def run_raw_pipeline():
 
     conn.close()
 
-    diff_vs_clean = len(df_prepared) - len(df_clean_ref)
-
-    print(
-        f"Diferença de linhas entre gabarito clean e preparado: {diff_vs_clean}")
-    
-
 def run_excluded(df_prepared):
 
     excluded_status = {"pending", "canceled"}
@@ -154,30 +142,45 @@ def run_financial(df_prepared):
 
 
 def run_inconsistent(df_raw):
-
+    """
+    Identifica vendas financeiramente relevantes (paid/returned) que possuem 
+    inconsistências técnicas nos dados, mas devem ser rastreadas pela contabilidade.
+    
+    Inconsistências detectadas:
+    - Quantidade inválida (nula, zero ou negativa)
+    - Preço unitário inválido (nulo, zero ou negativo)
+    - Desconto percentual inválido (nulo, negativo ou > 100%)
+    
+    Args:
+        df_raw: DataFrame bruto de vendas
+        
+    Returns:
+        DataFrame com vendas inconsistentes de status financeiro
+    """
     df = df_raw.copy()
-
+    
+    # Filtrar apenas vendas com impacto financeiro
     financial_status = {"paid", "returned"}
-
     df = df[df["order_status"].isin(financial_status)].copy()
-
-    df["quantity"] = pd.to_numeric(df["quantity"], errors="coerce")
-
-    df["unit_price"] = pd.to_numeric(df["unit_price"], errors="coerce")
-
-    df["discount_pct"] = pd.to_numeric(df["discount_pct"], errors="coerce")
-
-
+    
+    # Converter colunas numéricas (invalidas viram NaN)
+    numeric_columns = ["quantity", "unit_price", "discount_pct"]
+    for col in numeric_columns:
+        df[col] = pd.to_numeric(df[col], errors="coerce")
+    
+    # Identificar inconsistências por coluna
     invalid_quantity = df["quantity"].isna() | (df["quantity"] <= 0)
-    invalid_unit_price = df["unit_price"].isna() | (df["unit_price"] <=0)
-    invalid_discount_pct = df["discount_pct"].isna() | (df["discount_pct"] < 0) | (df["discount_pct"] > 1)
+    invalid_price = df["unit_price"].isna() | (df["unit_price"] <= 0)
+    invalid_discount = (
+        df["discount_pct"].isna() | 
+        (df["discount_pct"] < 0) | 
+        (df["discount_pct"] > 1)
+    )
     
-    inconsistent_mask = (invalid_quantity | invalid_unit_price | invalid_discount_pct)
-
-    df_inconsistent = df[inconsistent_mask]
+    # Consolidar máscara de inconsistências
+    inconsistent_mask = invalid_quantity | invalid_price | invalid_discount
     
-    return df_inconsistent
-
+    return df[inconsistent_mask].copy()
 
 def validate_numeric_column(
     df,
@@ -289,6 +292,7 @@ def ensure_db_schema(conn):
         base_dir / "sql" / "views" / "kpis" /  "vw_kpis_resultado_liquido_final.sql",
         base_dir / "sql" / "views" / "kpis" /  "vw_kpis_resultado_financeiro.sql",
         base_dir / "sql" / "views" / "kpis" / "vw_kpis_resultado_total_v_excluidas.sql",
+        base_dir / "sql" / "views" / "base" / "vw_base_vendas.sql",
         base_dir / "sql" / "views" / "base" / "vw_base_vendas_financeiras.sql",
         base_dir / "sql" / "views" / "analytics" / "vw_analytics_categoria_mais_vendida.sql",
         base_dir / "sql" / "views"/ "analytics" / "vw_analytics_categorias_retornadas.sql",
