@@ -2,23 +2,19 @@ Camada: geral / documentação
 
 # 1. Objetivo do projeto
 
-Criar um mini pipeline de dados de vendas para a empresa fictícia “Loja Rápida”, 
-organizando arquivos brutos de vendas, limpando os dados e carregando tudo em um 
-banco SQL para análise.
+Ter um pipeline simples de vendas para a loja fictícia “Loja Rápida”: ler CSVs, limpar, gravar em SQLite e gerar views para análise e BI. É exercício de fundamentos, não algo corporativo.
 
-# 2. Tecnologias usadas (por enquanto)
+# 2. Tecnologias usadas
 
-- Git (controle de versão)
-- Python (scripts de ingestão e tratamento de dados)
-- SQL + banco relacional (armazenar e consultar as vendas)
-- Pasta de dados local (`data/raw` e `data/processed`)
-- Linha de comando (Linux/terminal)
+- Python (pandas, sqlite3)
+- SQLite (banco local)
+- Git/GitHub
+- Ferramenta de BI (ex.: Power BI) lendo os CSVs exportados
 
-# 3. Visão geral do fluxo (alto nível)
+# 3. Fluxo resumido
 
-- Arquivos de vendas chegam na pasta `data/raw/`
-- Um script em Python lê esses arquivos, faz validações e limpeza
-- O resultado é salvo em `data/processed/`
-- Esses dados são carregados em um banco SQL
-- Consultas em `sql/queries/` respondem perguntas do negócio 
-  (vendas por dia, top produtos, clientes mais valiosos etc.)
+1. Arquivos `.csv` entram em `data/raw/`.
+2. Script `src/pipelines/pipeline_vendas.py` lê, valida (datas, horários, números, textos) e salva em `data/processed/`.
+3. Os dados tratados vão para o SQLite em `data/processed/database/loja_rapida.db`.
+4. Views SQL em `sql/views` criam camadas: base, quality, analytics, kpis, time_analysis.
+5. `src/export/export_views_to_csv.py` exporta cada view para CSVs em `data/bi/`.

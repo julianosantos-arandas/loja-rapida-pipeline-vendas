@@ -1,8 +1,12 @@
-# Dados processados
+# Dados processados (gerados)
 
-Os arquivos desta pasta são gerados automaticamente pelo pipeline
-e não são versionados no GitHub.
+Fica tranquilo: nada aqui é feito na mão. O pipeline cria tudo sozinho.
 
-Para gerar os dados:
-1. Execute o pipeline em src/pipelines/pipeline_vendas.py
-2. Os arquivos processados serão criados aqui.
+Regras rápidas:
+- Não versionar esta pasta (só arquivos de trabalho temporário).
+- O banco SQLite fica em `data/processed/database/loja_rapida.db`.
+- Outras saídas ficam em `data/processed/base`, `quality`, `analytics`.
+
+Como gerar:
+1. Rodar `python src/pipelines/pipeline_vendas.py`.
+2. Conferir se os arquivos apareceram nas subpastas acima.

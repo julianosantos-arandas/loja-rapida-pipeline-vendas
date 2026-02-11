@@ -2,18 +2,35 @@
 .venv/
 venv/
 
+# IDE / editor
+.vscode/
+.idea/
+.ipynb_checkpoints/
+
 # Variáveis de ambiente
 .env
 .env.*
 
-# Cache Python
+# Cache Python e ferramentas
 __pycache__/
 *.pyc
 *.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+
+# Build / distribuição
+build/
+dist/
+*.egg-info/
 
 # Arquivos de sistema
 .DS_Store
 Thumbs.db
+
+# Dados de entrada (CSV brutos)
+data/raw/*
 
 # Dados gerados pelo pipeline (não versionar)
 data/processed/*
@@ -23,6 +40,11 @@ data/processed/*
 *.db
 *.sqlite
 *.sqlite3
+
+# Cobertura / relatórios
+.coverage
+coverage.xml
+htmlcov/
 
 # Logs
 *.log
