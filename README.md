@@ -1,56 +1,67 @@
- Loja Rápida — Pipeline de Vendas
-Sobre o projeto
+Loja Rápida — Pipeline de Vendas
+
+🔵 Sobre o projeto
 
 Este é meu primeiro projeto completo de engenharia de dados.
 
-O objetivo foi organizar planilhas de vendas de uma loja fictícia chamada Loja Rápida, que não possuía um processo estruturado para acompanhar métricas, faturamento e qualidade dos dados.
+O projeto simula o cenário de uma loja fictícia chamada Loja Rápida, que utilizava apenas planilhas soltas para registrar vendas, sem um processo estruturado para controle de métricas e qualidade dos dados.
 
-A partir desse problema, desenvolvi um pipeline simples em Python com SQLite, organizando os dados em camadas e criando visualizações para análise.
+A proposta foi organizar esse fluxo por meio de um pipeline simples em Python com SQLite, estruturando os dados em camadas e criando uma base confiável para análise.
 
-Problema
+🔵 Problema
 
-A loja trabalhava apenas com planilhas soltas, o que gerava:
+A ausência de um processo estruturado gerava:
 
-Dificuldade para acompanhar faturamento mensal
+🔹 Dificuldade para acompanhar o faturamento mensal
 
-Falta de controle sobre vendas inconsistentes
+🔹 Falta de controle sobre registros inconsistentes
 
-Ausência de indicadores claros (ticket médio, produtos mais vendidos etc.)
+🔹 Ausência de indicadores consolidados (ticket médio, produtos mais vendidos, faturamento por cidade)
 
-Risco de erro manual
+🔹 Risco elevado de erro manual
 
-Solução
+🔵 Solução
 
 Foi desenvolvido um pipeline com as seguintes etapas:
 
-Ingestão de dados brutos
+1️⃣ Ingestão de dados brutos
 
-Tratamento e validações técnicas
+2️⃣ Tratamento e padronização
 
-Separação de vendas inconsistentes
+3️⃣ Separação de registros inconsistentes
 
-Criação de views analíticas
+4️⃣ Modelagem por meio de views analíticas
 
-Exportação para BI
+5️⃣ Exportação de dados para consumo em BI
 
-O que aprendi
+🔵 Tecnologias utilizadas
 
-Organização de estrutura de projeto
+🔹 SQLite
 
-Uso de SQLite com Python
+🔹 Git
 
-Separação de camadas (base, quality, analytics)
+🔹 Power BI
 
-Boas práticas básicas de versionamento com Git
+🔹 Python
 
-Tecnologias utilizadas
+🔹 Pandas
 
-Python
 
-Pandas
+Aprendizados
 
-SQLite
+Durante o desenvolvimento, aprofundei conhecimentos em:
 
-Git
+🔹 Organização de projetos de dados
 
-Power BI
+🔹 Estruturação em camadas (base, quality, analytics)
+
+🔹 Manipulação de dados com Pandas
+
+🔹 Criação de views analíticas em SQL
+
+🔹 Versionamento com Git
+
+🔵 Próximos passos
+
+Este projeto representa minha base em organização e estruturação de dados.
+Nos próximos projetos pretendo evoluir para automação, testes e ferramentas mais robustas do ecossistema de dados.
