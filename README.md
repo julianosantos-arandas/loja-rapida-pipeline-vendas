@@ -47,7 +47,7 @@ Foi desenvolvido um pipeline com as seguintes etapas:
 🔹 Pandas
 
 
-Aprendizados
+🔵 Aprendizados
 
 Durante o desenvolvimento, aprofundei conhecimentos em:
 
