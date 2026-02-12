@@ -1,3 +1,5 @@
+![Python](https://img.shields.io/badge/language-Python-blue)
+
 Loja Rápida — Pipeline de Vendas
 
 🔵 Sobre o projeto
