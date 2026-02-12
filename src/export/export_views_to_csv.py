@@ -1,3 +1,12 @@
+"""
+Pipeline principal de processamento de vendas.
+
+Responsável por:
+- Leitura de dados brutos
+- Tratamento e validações
+- Carga no banco SQLite
+"""
+
 # bloco 1
 import os
 import sqlite3

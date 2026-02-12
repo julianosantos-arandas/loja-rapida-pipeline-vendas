@@ -1,8 +1,15 @@
+"""
+Pipeline principal de processamento de vendas.
+
+Responsável por:
+- Leitura de dados brutos
+- Tratamento e validações
+- Carga no banco SQLite
+"""
+
 import os
 import pandas as pd
 import sqlite3
-from pathlib import Path
-
 from pathlib import Path
 
 # Diretório raiz do projeto (Loja_Rapida_p_v)
