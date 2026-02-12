@@ -1,3 +1,4 @@
+![GitHub last commit](https://img.shields.io/github/last-commit/julianosantos-arandas/loja-rapida-pipeline-vendas)
 ![Python](https://img.shields.io/badge/language-Python-blue)
 
 Loja Rápida — Pipeline de Vendas
@@ -88,6 +89,15 @@ cd loja-rapida-pipeline-vendas
 
 🔵 Como executar o projeto
 
+Pré-requisitos
+Colocar uma seção acima de “Como executar” explicando:
+
+🔹 Python 3.8+
+
+🔹 Git instalado
+
+🔹 (Opção) Power BI instalado
+
 1️⃣ Criar ambiente virtual Linux / macOS:
    python3 -m venv .venv
    source .venv/bin/activate
@@ -121,6 +131,17 @@ Dentro do SQLite:
    .tables
    .schema nome_da_view 
     Exemplo: .schema vw_analytics_faturamento_mensal ➡️ Isso exibirá o SQL utilizado na criação da view.
+
+🔵 Testes
+
+O projeto possui testes básicos utilizando pytest para validar:
+
+🔹 Execução do pipeline
+🔹 Criação do schema no SQLite
+
+Para rodar:
+
+pytest
 
 
 🔵 Próximos passos

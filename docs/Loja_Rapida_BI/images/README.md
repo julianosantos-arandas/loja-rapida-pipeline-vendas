@@ -16,11 +16,11 @@ data/processed/database/loja_rapida.db
 
 As métricas são derivadas das seguintes views:
 
-- vw_analytics_faturamento_mensal
-- vw_analytics_ticket_medio
-- vw_analytics_faturamento_por_cidades
-- vw_kpis_resultado_liquido_final
-- vw_analytics_vendas_inconsistentes
+🔹 vw_analytics_faturamento_mensal
+🔹 vw_analytics_ticket_medio
+🔹 vw_analytics_faturamento_por_cidades
+🔹 vw_kpis_resultado_liquido_final
+🔹 vw_analytics_vendas_inconsistentes
 
 
 🔵 Principais Indicadores
@@ -56,12 +56,22 @@ preço inválido, desconto incorreto).
 
 Origem: vw_analytics_vendas_inconsistentes
 
+🔵 Decisões dos KPIs
+
+O ticket médio considera apenas vendas com status paid, pois são as que realmente geram receita.
+
+As devoluções (returned) foram analisadas separadamente, pois representam valores que saíram do caixa após a venda.
+
+Registros com erro técnico (quantidade negativa, preço inválido, desconto incorreto) foram removidos da camada analítica para não distorcer os indicadores, mas continuam armazenados para controle.
+
+A ideia foi trabalhar com dados mais confiáveis sem perder rastreabilidade.
+
 🔵 Observações
 
 O objetivo do dashboard não é apenas apresentar métricas,
 mas também demonstrar a separação entre:
 
-🔹Camada Base
+🔹 Camada Base
 🔹 Camada de Qualidade
 🔹 Camada Analítica
 🔹 Camada de KPIs
