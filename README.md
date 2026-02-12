@@ -54,10 +54,10 @@ Foi desenvolvido um pipeline com as seguintes etapas:
 O dashboard foi construído a partir das views analíticas geradas no pipeline.
 
 🔹 Visão Geral
-![Visão Geral](docs/Loja_Rapida_BI/images/visao_geral.png)
+![Visão Geral](docs/Loja_Rapida_BI/images/01_visao_geral.png)
 
 🔹 Monitoramento de Inconsistências
-![Governança](docs/Loja_Rapida_BI/images/governanca_inconsistentes.png)
+![Governança](docs/Loja_Rapida_BI/images/03_governanca_inconsistentes.png)
 
 
 Para documentação detalhada do dashboard:
