@@ -61,7 +61,7 @@ O dashboard foi construído a partir das views analíticas geradas no pipeline.
 
 
 Para documentação detalhada do dashboard:
-docs/dashboard.md
+docs/Loja_Rapida_BI/images/README.md
 
 
 🔵 Aprendizados
