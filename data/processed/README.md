@@ -1,6 +1,5 @@
 # Dados processados (gerados)
 
-Fica tranquilo: nada aqui é feito na mão. O pipeline cria tudo sozinho.
 
 Regras rápidas:
 - Não versionar esta pasta (só arquivos de trabalho temporário).
