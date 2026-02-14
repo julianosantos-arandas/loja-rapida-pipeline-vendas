@@ -55,10 +55,40 @@ def load_all_sales_file():
             # pd.concat(dfs, ignore_index=True) junta (concatena) todos os DataFrames da lista dfs em um único DataFrame.
     return pd.concat(dfs, ignore_index=True)
 
+def validate_schema(df):
+    expected_columns = {
+        "order_id",
+        "order_date",
+        "order_time",
+        "customer_id",
+        "customer_city",
+        "product_id",
+        "product_name",
+        "category",
+        "quantity",
+        "unit_price",
+        "discount_pct",
+        "payment_method",
+        "channel",
+        "order_status",
+    }
+
+    incoming_columns = set(df.columns)
+
+    if incoming_columns != expected_columns:
+        missing = expected_columns - incoming_columns
+        extra = incoming_columns - expected_columns
+
+        raise ValueError(
+            f"Schema inválido. Faltando: {missing} | Extras: {extra}"
+        )
+
 def run_raw_pipeline():
     """Executar o pipeline de dados brutos e preparar a base para comparação com o gabarito clean."""
     print("LENDO CSV")
     df_raw = load_all_sales_file()
+
+    validate_schema(df_raw)
 
     print(f"Total de linhas carregadas de raw: {len(df_raw)}")
 
@@ -67,6 +97,7 @@ def run_raw_pipeline():
     run_excluded(df_prepared)
 
     run_financial(df_prepared)
+
     
     output_path = BASE_LAYER_DIR / "vendas_prepared.csv"
 
